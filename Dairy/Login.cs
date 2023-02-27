@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Dairy
 {
-    public partial class Splash : Form
+    public partial class Login : Form
     {
-        public Splash()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void bunifuProgressBar1_progressChanged(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
