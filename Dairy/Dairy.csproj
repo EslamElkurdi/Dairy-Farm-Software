@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cows Health.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cows Health.Designer.cs">
+      <DependentUpon>Cows Health.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cows.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MilkProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilkProduction.Designer.cs">
+      <DependentUpon>MilkProduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +87,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cows Health.resx">
+      <DependentUpon>Cows Health.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cows.resx">
       <DependentUpon>Cows.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilkProduction.resx">
+      <DependentUpon>MilkProduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +131,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cow-1715829__340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

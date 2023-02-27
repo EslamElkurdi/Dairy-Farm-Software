@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Dairy
 {
-    public partial class Cows : Form
+    public partial class Cows_Health : Form
     {
-        public Cows()
+        public Cows_Health()
         {
             InitializeComponent();
         }
 
-        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
