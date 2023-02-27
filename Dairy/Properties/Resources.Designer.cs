@@ -63,6 +63,16 @@ namespace Dairy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cow_1715829__340 {
+            get {
+                object obj = ResourceManager.GetObject("cow-1715829__340", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2023_02_27_at_14_52_36 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2023-02-27 at 14.52.36", resourceCulture);

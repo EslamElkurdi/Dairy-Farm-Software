@@ -29,21 +29,11 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dairy.Properties.Resources.WhatsApp_Image_2023_02_27_at_14_52_36;
-            this.pictureBox1.Location = new System.Drawing.Point(330, 100);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -69,6 +59,16 @@ namespace Dairy
             this.bunifuProgressBar1.TabIndex = 2;
             this.bunifuProgressBar1.Value = 0;
             this.bunifuProgressBar1.progressChanged += new System.EventHandler(this.bunifuProgressBar1_progressChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dairy.Properties.Resources.WhatsApp_Image_2023_02_27_at_14_52_36;
+            this.pictureBox1.Location = new System.Drawing.Point(330, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(170, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Splash
             // 
