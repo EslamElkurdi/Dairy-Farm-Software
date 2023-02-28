@@ -29,9 +29,9 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -57,21 +57,21 @@ namespace Dairy
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.colorTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.earTagTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.breedTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.pastureTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.WeightAtBirthTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.AgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DOBDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -358,25 +358,25 @@ namespace Dairy
             this.label1.TabIndex = 3;
             this.label1.Text = "D F S M";
             // 
-            // bunifuMaterialTextbox1
+            // cowNameTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(293, 115);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 4;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
+            this.cowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cowNameTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cowNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.cowNameTb.HintText = "";
+            this.cowNameTb.isPassword = false;
+            this.cowNameTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.cowNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.cowNameTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.cowNameTb.LineThickness = 3;
+            this.cowNameTb.Location = new System.Drawing.Point(293, 115);
+            this.cowNameTb.Margin = new System.Windows.Forms.Padding(4);
+            this.cowNameTb.Name = "cowNameTb";
+            this.cowNameTb.Size = new System.Drawing.Size(198, 44);
+            this.cowNameTb.TabIndex = 4;
+            this.cowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cowNameTb.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -398,24 +398,24 @@ namespace Dairy
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Color";
             // 
-            // bunifuMaterialTextbox2
+            // colorTb
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(783, 115);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 6;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.colorTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.colorTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.colorTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.colorTb.HintForeColor = System.Drawing.Color.Empty;
+            this.colorTb.HintText = "";
+            this.colorTb.isPassword = false;
+            this.colorTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.colorTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.colorTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.colorTb.LineThickness = 3;
+            this.colorTb.Location = new System.Drawing.Point(783, 115);
+            this.colorTb.Margin = new System.Windows.Forms.Padding(4);
+            this.colorTb.Name = "colorTb";
+            this.colorTb.Size = new System.Drawing.Size(198, 44);
+            this.colorTb.TabIndex = 6;
+            this.colorTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel6
             // 
@@ -427,24 +427,24 @@ namespace Dairy
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "Ear Tag";
             // 
-            // bunifuMaterialTextbox3
+            // earTagTb
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(540, 115);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox3.TabIndex = 8;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.earTagTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.earTagTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.earTagTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.earTagTb.HintForeColor = System.Drawing.Color.Empty;
+            this.earTagTb.HintText = "";
+            this.earTagTb.isPassword = false;
+            this.earTagTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.earTagTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.earTagTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.earTagTb.LineThickness = 3;
+            this.earTagTb.Location = new System.Drawing.Point(540, 115);
+            this.earTagTb.Margin = new System.Windows.Forms.Padding(4);
+            this.earTagTb.Name = "earTagTb";
+            this.earTagTb.Size = new System.Drawing.Size(198, 44);
+            this.earTagTb.TabIndex = 8;
+            this.earTagTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel7
             // 
@@ -456,24 +456,24 @@ namespace Dairy
             this.guna2HtmlLabel7.TabIndex = 11;
             this.guna2HtmlLabel7.Text = "Bread";
             // 
-            // bunifuMaterialTextbox4
+            // breedTb
             // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(1033, 115);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox4.TabIndex = 10;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.breedTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.breedTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.breedTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.breedTb.HintForeColor = System.Drawing.Color.Empty;
+            this.breedTb.HintText = "";
+            this.breedTb.isPassword = false;
+            this.breedTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.breedTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.breedTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.breedTb.LineThickness = 3;
+            this.breedTb.Location = new System.Drawing.Point(1033, 115);
+            this.breedTb.Margin = new System.Windows.Forms.Padding(4);
+            this.breedTb.Name = "breedTb";
+            this.breedTb.Size = new System.Drawing.Size(198, 44);
+            this.breedTb.TabIndex = 10;
+            this.breedTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel8
             // 
@@ -485,24 +485,24 @@ namespace Dairy
             this.guna2HtmlLabel8.TabIndex = 17;
             this.guna2HtmlLabel8.Text = "Pasture";
             // 
-            // bunifuMaterialTextbox5
+            // pastureTb
             // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(1033, 290);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox5.TabIndex = 16;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.pastureTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pastureTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.pastureTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pastureTb.HintForeColor = System.Drawing.Color.Empty;
+            this.pastureTb.HintText = "";
+            this.pastureTb.isPassword = false;
+            this.pastureTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.pastureTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.pastureTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.pastureTb.LineThickness = 3;
+            this.pastureTb.Location = new System.Drawing.Point(1033, 290);
+            this.pastureTb.Margin = new System.Windows.Forms.Padding(4);
+            this.pastureTb.Name = "pastureTb";
+            this.pastureTb.Size = new System.Drawing.Size(198, 44);
+            this.pastureTb.TabIndex = 16;
+            this.pastureTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel9
             // 
@@ -514,24 +514,24 @@ namespace Dairy
             this.guna2HtmlLabel9.TabIndex = 15;
             this.guna2HtmlLabel9.Text = "Weight at birth";
             // 
-            // bunifuMaterialTextbox6
+            // WeightAtBirthTb
             // 
-            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox6.HintText = "";
-            this.bunifuMaterialTextbox6.isPassword = false;
-            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox6.LineThickness = 3;
-            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(540, 290);
-            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
-            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox6.TabIndex = 14;
-            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.WeightAtBirthTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.WeightAtBirthTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.WeightAtBirthTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.WeightAtBirthTb.HintForeColor = System.Drawing.Color.Empty;
+            this.WeightAtBirthTb.HintText = "";
+            this.WeightAtBirthTb.isPassword = false;
+            this.WeightAtBirthTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.WeightAtBirthTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.WeightAtBirthTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.WeightAtBirthTb.LineThickness = 3;
+            this.WeightAtBirthTb.Location = new System.Drawing.Point(540, 290);
+            this.WeightAtBirthTb.Margin = new System.Windows.Forms.Padding(4);
+            this.WeightAtBirthTb.Name = "WeightAtBirthTb";
+            this.WeightAtBirthTb.Size = new System.Drawing.Size(198, 44);
+            this.WeightAtBirthTb.TabIndex = 14;
+            this.WeightAtBirthTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel10
             // 
@@ -543,37 +543,37 @@ namespace Dairy
             this.guna2HtmlLabel10.TabIndex = 13;
             this.guna2HtmlLabel10.Text = "Age";
             // 
-            // bunifuMaterialTextbox7
+            // AgeTb
             // 
-            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox7.HintText = "";
-            this.bunifuMaterialTextbox7.isPassword = false;
-            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox7.LineThickness = 3;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(783, 290);
-            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
-            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox7.TabIndex = 12;
-            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.AgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AgeTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AgeTb.HintText = "";
+            this.AgeTb.isPassword = false;
+            this.AgeTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.AgeTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AgeTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.AgeTb.LineThickness = 3;
+            this.AgeTb.Location = new System.Drawing.Point(783, 290);
+            this.AgeTb.Margin = new System.Windows.Forms.Padding(4);
+            this.AgeTb.Name = "AgeTb";
+            this.AgeTb.Size = new System.Drawing.Size(198, 44);
+            this.AgeTb.TabIndex = 12;
+            this.AgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2DateTimePicker1
+            // DOBDate
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(293, 298);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(233, 36);
-            this.guna2DateTimePicker1.TabIndex = 18;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.DOBDate.Checked = true;
+            this.DOBDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DOBDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DOBDate.Location = new System.Drawing.Point(293, 298);
+            this.DOBDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBDate.Name = "DOBDate";
+            this.DOBDate.Size = new System.Drawing.Size(233, 36);
+            this.DOBDate.TabIndex = 18;
+            this.DOBDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel11
             // 
@@ -587,26 +587,26 @@ namespace Dairy
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(293, 494);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -703,21 +703,21 @@ namespace Dairy
             this.Controls.Add(this.guna2HtmlLabel12);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2HtmlLabel11);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.DOBDate);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.bunifuMaterialTextbox5);
+            this.Controls.Add(this.pastureTb);
             this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.bunifuMaterialTextbox6);
+            this.Controls.Add(this.WeightAtBirthTb);
             this.Controls.Add(this.guna2HtmlLabel10);
-            this.Controls.Add(this.bunifuMaterialTextbox7);
+            this.Controls.Add(this.AgeTb);
             this.Controls.Add(this.guna2HtmlLabel7);
-            this.Controls.Add(this.bunifuMaterialTextbox4);
+            this.Controls.Add(this.breedTb);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
+            this.Controls.Add(this.earTagTb);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.colorTb);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.cowNameTb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -758,21 +758,21 @@ namespace Dairy
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cowNameTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox colorTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox earTagTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox breedTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox pastureTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox WeightAtBirthTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AgeTb;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DOBDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
