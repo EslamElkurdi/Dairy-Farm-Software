@@ -22,95 +22,51 @@ namespace Dairy
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
             Cows obj = new Cows();
             obj.Show();
             this.Hide();
-
         }
 
-
-
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
             MilkProduction obj = new MilkProduction();
             obj.Show();
             this.Hide();
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel14_Click(object sender, EventArgs e)
         {
             Cows_Health obj = new Cows_Health();
             obj.Show();
             this.Hide();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
         {
             Breeding obj = new Breeding();
             obj.Show();
             this.Hide();
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel13_Click(object sender, EventArgs e)
         {
             MilkSales obj = new MilkSales();
             obj.Show();
             this.Hide();
         }
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel15_Click(object sender, EventArgs e)
         {
             Finance obj = new Finance();
             obj.Show();
             this.Hide();
         }
 
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            Dashboard obj = new Dashboard();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel3_Paint_1(object sender, PaintEventArgs e)
-        {
-            MilkProduction obj = new MilkProduction();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel6_Paint_1(object sender, PaintEventArgs e)
-        {
-            Cows_Health obj = new Cows_Health();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel4_Paint_1(object sender, PaintEventArgs e)
-        {
-            Breeding obj = new Breeding();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel5_Paint_1(object sender, PaintEventArgs e)
-        {
-            MilkSales obj = new MilkSales();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel7_Paint_1(object sender, PaintEventArgs e)
-        {
-            Finance obj = new Finance();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void panel8_Paint_1(object sender, PaintEventArgs e)
+        private void guna2HtmlLabel16_Click(object sender, EventArgs e)
         {
             Dashboard obj = new Dashboard();
             obj.Show();
