@@ -16,7 +16,7 @@ namespace Dairy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MilkProduction());
+            Application.Run(new Cows_Health());
         }
     }
 }
