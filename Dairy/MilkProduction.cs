@@ -21,5 +21,100 @@ namespace Dairy
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Cows obj = new Cows();
+            obj.Show();
+            this.Hide();
+
+        }
+
+
+
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            MilkProduction obj = new MilkProduction();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+            Cows_Health obj = new Cows_Health();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            Breeding obj = new Breeding();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            MilkSales obj = new MilkSales();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            Finance obj = new Finance();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+            MilkProduction obj = new MilkProduction();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel6_Paint_1(object sender, PaintEventArgs e)
+        {
+            Cows_Health obj = new Cows_Health();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel4_Paint_1(object sender, PaintEventArgs e)
+        {
+            Breeding obj = new Breeding();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel5_Paint_1(object sender, PaintEventArgs e)
+        {
+            MilkSales obj = new MilkSales();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel7_Paint_1(object sender, PaintEventArgs e)
+        {
+            Finance obj = new Finance();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void panel8_Paint_1(object sender, PaintEventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
