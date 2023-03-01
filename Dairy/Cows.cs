@@ -142,5 +142,26 @@ namespace Dairy
         {
             Clear();
         }
+        int key = 0;
+        private void CowDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cowNameTb.Text = CowDG.SelectedRows[0].Cells[1].Value.ToString();
+            earTagTb.Text = CowDG.SelectedRows[0].Cells[2].Value.ToString();
+            colorTb.Text = CowDG.SelectedRows[0].Cells[3].Value.ToString();
+            breedTb.Text = CowDG.SelectedRows[0].Cells[4].Value.ToString();
+            WeightAtBirthTb.Text = CowDG.SelectedRows[0].Cells[6].Value.ToString();
+            pastureTb.Text = CowDG.SelectedRows[0].Cells[7].Value.ToString();
+            if (cowNameTb.Text == "")
+            {
+                key = 0;
+                age = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(CowDG.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(CowDG.SelectedRows[0].Cells[5].Value.ToString());
+            }
+
+        }
     }
 }
