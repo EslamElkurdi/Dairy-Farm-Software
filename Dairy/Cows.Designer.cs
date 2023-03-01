@@ -546,6 +546,7 @@ namespace Dairy
             // AgeTb
             // 
             this.AgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeTb.Enabled = false;
             this.AgeTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.AgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.AgeTb.HintForeColor = System.Drawing.Color.Empty;
@@ -574,6 +575,8 @@ namespace Dairy
             this.DOBDate.Size = new System.Drawing.Size(233, 36);
             this.DOBDate.TabIndex = 18;
             this.DOBDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.DOBDate.ValueChanged += new System.EventHandler(this.DOBDate_ValueChanged);
+            this.DOBDate.MouseLeave += new System.EventHandler(this.DOBDate_MouseLeave);
             // 
             // guna2HtmlLabel11
             // 
@@ -679,6 +682,7 @@ namespace Dairy
             this.button3.TabIndex = 24;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
