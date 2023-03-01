@@ -87,7 +87,17 @@ namespace Dairy
             Con.Close();
         }
 
-        
+        private void Clear()
+        {
+            cowNameTb.Text = "";
+            earTagTb.Text = "";
+            colorTb.Text = "";
+            AgeTb.Text = "";
+            WeightAtBirthTb.Text = "";
+            pastureTb.Text = "";
+           // key = 0;
+        }
+
         int age = 0;
         private void button3_Click(object sender, EventArgs e)
         {
@@ -130,7 +140,7 @@ namespace Dairy
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            Clear();
         }
     }
 }
