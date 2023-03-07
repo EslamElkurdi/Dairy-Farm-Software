@@ -113,7 +113,28 @@ namespace Dairy
         }
         private void saveBtn_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCB.SelectedIndex == -1 || CowNameTb.Text == "" || AmMilkTb.Text == "" || pmMilkTb.Text == "" || NoonMilkTb.Text == "" || TotalMilkTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into MilkTbl values(" + CowIdCB.SelectedValue.ToString() + ",'" + CowNameTb.Text + "'," + AmMilkTb.Text + "," + NoonMilkTb.Text + "," + pmMilkTb.Text + "," + TotalMilkTb.Text + ", '" + dateTb.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Milk Saved");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
