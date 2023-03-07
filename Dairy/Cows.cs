@@ -95,7 +95,7 @@ namespace Dairy
             AgeTb.Text = "";
             WeightAtBirthTb.Text = "";
             pastureTb.Text = "";
-           // key = 0;
+            key = 0;
         }
 
         int age = 0;
@@ -178,7 +178,7 @@ namespace Dairy
                     string Query = "delete from CowTbl where CowId=" + key +";";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cow Saved Successfully");
+                    MessageBox.Show("Deleted Successfully");
                     Con.Close();
                     populate();
 
@@ -191,5 +191,32 @@ namespace Dairy
             } 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cowNameTb.Text == "" || earTagTb.Text == "" || colorTb.Text == "" || breedTb.Text == "" || WeightAtBirthTb.Text == "" || AgeTb.Text == "" || pastureTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "update CowTbl set CowName='" + cowNameTb.Text + "', EarTag= '" + earTagTb.Text + "',Color='" + colorTb.Text + "',Breed='" + breedTb.Text + "',Age=" + age + ",WeifhtAtBirth=" + WeightAtBirthTb.Text + ",Posture='" + pastureTb.Text+ "' where CowId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Updated");
+                    Con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+     
     }
 }
