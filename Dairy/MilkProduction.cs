@@ -225,5 +225,31 @@ namespace Dairy
                 }
             }
         }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            if (CowIdCB.SelectedIndex == -1 || CowNameTb.Text == "" || AmMilkTb.Text == "" || pmMilkTb.Text == "" || NoonMilkTb.Text == "" || TotalMilkTb.Text == "")
+            {
+                MessageBox.Show("Select Product");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update MilkTbl set CowName='" + CowNameTb.Text + "', AmMilk= " + AmMilkTb.Text + ",NoonMilk=" + NoonMilkTb.Text + ",PmMilk=" + pmMilkTb.Text + ",TotalMilk=" + TotalMilkTb.Text + ",DateProd='" + dateTb.Value.Date + "' where MId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
