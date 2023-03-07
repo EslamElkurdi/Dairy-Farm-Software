@@ -163,6 +163,7 @@ namespace Dairy
             Clear();
         }
 
+
         private void GetCowName() 
         {
             con.Open();
