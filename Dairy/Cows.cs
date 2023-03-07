@@ -163,5 +163,33 @@ namespace Dairy
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select item");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "delete from CowTbl where CowId=" + key +";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved Successfully");
+                    Con.Close();
+                    populate();
+
+
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            } 
+
+        }
     }
 }
