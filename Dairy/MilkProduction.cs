@@ -120,5 +120,10 @@ namespace Dairy
         {
 
         }
+
+        private void Clearbtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
