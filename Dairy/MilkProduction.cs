@@ -145,5 +145,22 @@ namespace Dairy
         {
             GetCowName();
         }
+
+        private void pmMilkTb_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pmMilkTb_MouseUp(object sender, MouseEventArgs e)
+        {
+
+
+        }
+
+        private void pmMilkTb_MouseLeave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(AmMilkTb.Text) + Convert.ToInt32(pmMilkTb.Text) + Convert.ToInt32(NoonMilkTb.Text);
+            TotalMilkTb.Text = "" + total;
+        }
     }
 }
