@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -71,6 +72,27 @@ namespace Dairy
             Dashboard obj = new Dashboard();
             obj.Show();
             this.Hide();
+        }
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void FillCowId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from CowsTbl");
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCB.ValueMember = "CowId";
+            CowIdCB.DataSource = dt;
+            con.Close();
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

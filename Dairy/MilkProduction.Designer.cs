@@ -73,10 +73,10 @@ namespace Dairy
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.AmMilkTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.CowIdTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.CowIdCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel2.SuspendLayout();
@@ -340,6 +340,7 @@ namespace Dairy
             this.saveBtn.TabIndex = 48;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -604,25 +605,6 @@ namespace Dairy
             this.guna2HtmlLabel1.TabIndex = 29;
             this.guna2HtmlLabel1.Text = "Cow Id";
             // 
-            // CowIdTb
-            // 
-            this.CowIdTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowIdTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.CowIdTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CowIdTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CowIdTb.HintText = "";
-            this.CowIdTb.isPassword = false;
-            this.CowIdTb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.CowIdTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CowIdTb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.CowIdTb.LineThickness = 3;
-            this.CowIdTb.Location = new System.Drawing.Point(384, 114);
-            this.CowIdTb.Margin = new System.Windows.Forms.Padding(4);
-            this.CowIdTb.Name = "CowIdTb";
-            this.CowIdTb.Size = new System.Drawing.Size(198, 44);
-            this.CowIdTb.TabIndex = 28;
-            this.CowIdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -661,11 +643,27 @@ namespace Dairy
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
             // 
+            // CowIdCB
+            // 
+            this.CowIdCB.BackColor = System.Drawing.Color.Transparent;
+            this.CowIdCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CowIdCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CowIdCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowIdCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowIdCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CowIdCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CowIdCB.ItemHeight = 30;
+            this.CowIdCB.Location = new System.Drawing.Point(384, 122);
+            this.CowIdCB.Name = "CowIdCB";
+            this.CowIdCB.Size = new System.Drawing.Size(140, 36);
+            this.CowIdCB.TabIndex = 50;
+            // 
             // MilkProduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
+            this.Controls.Add(this.CowIdCB);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.DeleteBtn);
@@ -685,7 +683,6 @@ namespace Dairy
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.AmMilkTb);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.CowIdTb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -766,8 +763,8 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox AmMilkTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CowIdTb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox CowIdCB;
     }
 }
