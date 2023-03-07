@@ -16,6 +16,7 @@ namespace Dairy
         public MilkProduction()
         {
             InitializeComponent();
+            FillCowId();
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
@@ -90,7 +91,23 @@ namespace Dairy
             con.Close();
         }
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from CowTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowDG.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void saveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
