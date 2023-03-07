@@ -137,9 +137,25 @@ namespace Dairy
             }
         }
 
+        int key = 0;
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            CowIdCB.SelectedValue = CowDG.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = CowDG.SelectedRows[0].Cells[2].Value.ToString();
+            AmMilkTb.Text = CowDG.SelectedRows[0].Cells[3].Value.ToString();
+            NoonMilkTb.Text = CowDG.SelectedRows[0].Cells[4].Value.ToString();
+            pmMilkTb.Text = CowDG.SelectedRows[0].Cells[5].Value.ToString();
+            TotalMilkTb.Text = CowDG.SelectedRows[0].Cells[6].Value.ToString();
+            dateTb.Text = CowDG.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
 
+            }
+            else
+            {
+                key = Convert.ToInt32(CowDG.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void Clearbtn_Click(object sender, EventArgs e)
