@@ -199,5 +199,31 @@ namespace Dairy
             int total = Convert.ToInt32(AmMilkTb.Text) + Convert.ToInt32(pmMilkTb.Text) + Convert.ToInt32(NoonMilkTb.Text);
             TotalMilkTb.Text = "" + total;
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from MilkTbl where MId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Producet Deleted");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
