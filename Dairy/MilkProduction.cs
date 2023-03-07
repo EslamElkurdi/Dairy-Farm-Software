@@ -17,6 +17,15 @@ namespace Dairy
         {
             InitializeComponent();
             FillCowId();
+            populate();
+        }
+
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            AmMilkTb.Text = "";
+            pmMilkTb.Text = "";
+            TotalMilkTb.Text = "";
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
