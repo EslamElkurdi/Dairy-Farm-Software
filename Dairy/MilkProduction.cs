@@ -125,5 +125,25 @@ namespace Dairy
         {
             Clear();
         }
+
+        private void GetCowName() 
+        {
+            con.Open();
+            String query = "select * from CowTbl where CowId="+CowIdCB.SelectedValue.ToString()+"";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows) {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+
+            con.Close();
+        }
+
+        private void CowIdCB_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
+        }
     }
 }
