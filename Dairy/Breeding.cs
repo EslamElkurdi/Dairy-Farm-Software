@@ -126,6 +126,7 @@ namespace Dairy
             CowNameTb.Text = "";
             CowAgeTb.Text = "";
             RemarkesTb.Text = "";
+            key = 0;
         }
         private void button3_Click(object sender, EventArgs e)
         {
