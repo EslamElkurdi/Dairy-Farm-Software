@@ -29,13 +29,13 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CowAgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -64,23 +64,23 @@ namespace Dairy
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.HeatDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.BreedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker3 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.PregancyDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker4 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.ExcpectedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker5 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.CalvedDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CowIdCb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.RemarkesTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -97,7 +97,7 @@ namespace Dairy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel10
@@ -110,24 +110,24 @@ namespace Dairy
             this.guna2HtmlLabel10.TabIndex = 103;
             this.guna2HtmlLabel10.Text = "Cow Age";
             // 
-            // bunifuMaterialTextbox7
+            // CowAgeTb
             // 
-            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox7.HintText = "";
-            this.bunifuMaterialTextbox7.isPassword = false;
-            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox7.LineThickness = 3;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(924, 220);
-            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
-            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox7.TabIndex = 102;
-            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CowAgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowAgeTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CowAgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CowAgeTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CowAgeTb.HintText = "";
+            this.CowAgeTb.isPassword = false;
+            this.CowAgeTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.CowAgeTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.CowAgeTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.CowAgeTb.LineThickness = 3;
+            this.CowAgeTb.Location = new System.Drawing.Point(924, 220);
+            this.CowAgeTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CowAgeTb.Name = "CowAgeTb";
+            this.CowAgeTb.Size = new System.Drawing.Size(198, 44);
+            this.CowAgeTb.TabIndex = 102;
+            this.CowAgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel7
             // 
@@ -139,25 +139,25 @@ namespace Dairy
             this.guna2HtmlLabel7.TabIndex = 101;
             this.guna2HtmlLabel7.Text = "Cow Name";
             // 
-            // bunifuMaterialTextbox4
+            // CowNameTb
             // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(924, 109);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox4.TabIndex = 100;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox4.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
+            this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowNameTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CowNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CowNameTb.HintText = "";
+            this.CowNameTb.isPassword = false;
+            this.CowNameTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.CowNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.CowNameTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.CowNameTb.LineThickness = 3;
+            this.CowNameTb.Location = new System.Drawing.Point(924, 109);
+            this.CowNameTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CowNameTb.Name = "CowNameTb";
+            this.CowNameTb.Size = new System.Drawing.Size(198, 44);
+            this.CowNameTb.TabIndex = 100;
+            this.CowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CowNameTb.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
             // 
             // label2
             // 
@@ -455,57 +455,57 @@ namespace Dairy
             this.guna2HtmlLabel12.TabIndex = 109;
             this.guna2HtmlLabel12.Text = "Cows List";
             // 
-            // guna2DataGridView1
+            // DGV
             // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle21;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(478, 493);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(958, 285);
-            this.guna2DataGridView1.TabIndex = 108;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGV.ColumnHeadersHeight = 4;
+            this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGV.Location = new System.Drawing.Point(478, 493);
+            this.DGV.Name = "DGV";
+            this.DGV.RowHeadersVisible = false;
+            this.DGV.RowHeadersWidth = 51;
+            this.DGV.RowTemplate.Height = 24;
+            this.DGV.Size = new System.Drawing.Size(958, 285);
+            this.DGV.TabIndex = 108;
+            this.DGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DGV.ThemeStyle.HeaderStyle.Height = 4;
+            this.DGV.ThemeStyle.ReadOnly = false;
+            this.DGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGV.ThemeStyle.RowsStyle.Height = 24;
+            this.DGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2HtmlLabel11
             // 
@@ -517,18 +517,18 @@ namespace Dairy
             this.guna2HtmlLabel11.TabIndex = 107;
             this.guna2HtmlLabel11.Text = "Heat Date";
             // 
-            // guna2DateTimePicker1
+            // HeatDate
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(440, 117);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(124, 36);
-            this.guna2DateTimePicker1.TabIndex = 106;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.HeatDate.Checked = true;
+            this.HeatDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.HeatDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.HeatDate.Location = new System.Drawing.Point(440, 117);
+            this.HeatDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.HeatDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.HeatDate.Name = "HeatDate";
+            this.HeatDate.Size = new System.Drawing.Size(124, 36);
+            this.HeatDate.TabIndex = 106;
+            this.HeatDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // button4
             // 
@@ -551,6 +551,7 @@ namespace Dairy
             this.button3.TabIndex = 112;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -562,18 +563,18 @@ namespace Dairy
             this.guna2HtmlLabel1.TabIndex = 115;
             this.guna2HtmlLabel1.Text = "Breed Date";
             // 
-            // guna2DateTimePicker2
+            // BreedDate
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(595, 117);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(124, 36);
-            this.guna2DateTimePicker2.TabIndex = 114;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.BreedDate.Checked = true;
+            this.BreedDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BreedDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.BreedDate.Location = new System.Drawing.Point(595, 117);
+            this.BreedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.BreedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.BreedDate.Name = "BreedDate";
+            this.BreedDate.Size = new System.Drawing.Size(124, 36);
+            this.BreedDate.TabIndex = 114;
+            this.BreedDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel2
             // 
@@ -585,18 +586,18 @@ namespace Dairy
             this.guna2HtmlLabel2.TabIndex = 117;
             this.guna2HtmlLabel2.Text = "Pregancy Date";
             // 
-            // guna2DateTimePicker3
+            // PregancyDate
             // 
-            this.guna2DateTimePicker3.Checked = true;
-            this.guna2DateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker3.Location = new System.Drawing.Point(756, 117);
-            this.guna2DateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker3.Name = "guna2DateTimePicker3";
-            this.guna2DateTimePicker3.Size = new System.Drawing.Size(124, 36);
-            this.guna2DateTimePicker3.TabIndex = 116;
-            this.guna2DateTimePicker3.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.PregancyDate.Checked = true;
+            this.PregancyDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PregancyDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.PregancyDate.Location = new System.Drawing.Point(756, 117);
+            this.PregancyDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.PregancyDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.PregancyDate.Name = "PregancyDate";
+            this.PregancyDate.Size = new System.Drawing.Size(124, 36);
+            this.PregancyDate.TabIndex = 116;
+            this.PregancyDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel6
             // 
@@ -608,18 +609,18 @@ namespace Dairy
             this.guna2HtmlLabel6.TabIndex = 119;
             this.guna2HtmlLabel6.Text = "Excpected Date ";
             // 
-            // guna2DateTimePicker4
+            // ExcpectedDate
             // 
-            this.guna2DateTimePicker4.Checked = true;
-            this.guna2DateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker4.Location = new System.Drawing.Point(440, 228);
-            this.guna2DateTimePicker4.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker4.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker4.Name = "guna2DateTimePicker4";
-            this.guna2DateTimePicker4.Size = new System.Drawing.Size(124, 36);
-            this.guna2DateTimePicker4.TabIndex = 118;
-            this.guna2DateTimePicker4.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.ExcpectedDate.Checked = true;
+            this.ExcpectedDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ExcpectedDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.ExcpectedDate.Location = new System.Drawing.Point(440, 228);
+            this.ExcpectedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.ExcpectedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.ExcpectedDate.Name = "ExcpectedDate";
+            this.ExcpectedDate.Size = new System.Drawing.Size(124, 36);
+            this.ExcpectedDate.TabIndex = 118;
+            this.ExcpectedDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel8
             // 
@@ -631,18 +632,18 @@ namespace Dairy
             this.guna2HtmlLabel8.TabIndex = 121;
             this.guna2HtmlLabel8.Text = "Date Calved";
             // 
-            // guna2DateTimePicker5
+            // CalvedDate
             // 
-            this.guna2DateTimePicker5.Checked = true;
-            this.guna2DateTimePicker5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker5.Location = new System.Drawing.Point(595, 228);
-            this.guna2DateTimePicker5.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker5.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker5.Name = "guna2DateTimePicker5";
-            this.guna2DateTimePicker5.Size = new System.Drawing.Size(124, 36);
-            this.guna2DateTimePicker5.TabIndex = 120;
-            this.guna2DateTimePicker5.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.CalvedDate.Checked = true;
+            this.CalvedDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CalvedDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.CalvedDate.Location = new System.Drawing.Point(595, 228);
+            this.CalvedDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.CalvedDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.CalvedDate.Name = "CalvedDate";
+            this.CalvedDate.Size = new System.Drawing.Size(124, 36);
+            this.CalvedDate.TabIndex = 120;
+            this.CalvedDate.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel9
             // 
@@ -654,20 +655,20 @@ namespace Dairy
             this.guna2HtmlLabel9.TabIndex = 122;
             this.guna2HtmlLabel9.Text = "Cow Id";
             // 
-            // guna2ComboBox1
+            // CowIdCb
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(756, 228);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox1.TabIndex = 123;
+            this.CowIdCb.BackColor = System.Drawing.Color.Transparent;
+            this.CowIdCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CowIdCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CowIdCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowIdCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CowIdCb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CowIdCb.ItemHeight = 30;
+            this.CowIdCb.Location = new System.Drawing.Point(756, 228);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(140, 36);
+            this.CowIdCb.TabIndex = 123;
             // 
             // guna2HtmlLabel17
             // 
@@ -679,24 +680,24 @@ namespace Dairy
             this.guna2HtmlLabel17.TabIndex = 125;
             this.guna2HtmlLabel17.Text = "Remarkes";
             // 
-            // bunifuMaterialTextbox1
+            // RemarkesTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(631, 294);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 124;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RemarkesTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RemarkesTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.RemarkesTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RemarkesTb.HintForeColor = System.Drawing.Color.Empty;
+            this.RemarkesTb.HintText = "";
+            this.RemarkesTb.isPassword = false;
+            this.RemarkesTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.RemarkesTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.RemarkesTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.RemarkesTb.LineThickness = 3;
+            this.RemarkesTb.Location = new System.Drawing.Point(631, 294);
+            this.RemarkesTb.Margin = new System.Windows.Forms.Padding(4);
+            this.RemarkesTb.Name = "RemarkesTb";
+            this.RemarkesTb.Size = new System.Drawing.Size(198, 44);
+            this.RemarkesTb.TabIndex = 124;
+            this.RemarkesTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Breeding
             // 
@@ -704,29 +705,29 @@ namespace Dairy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
             this.Controls.Add(this.guna2HtmlLabel17);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.RemarkesTb);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.guna2DateTimePicker5);
+            this.Controls.Add(this.CalvedDate);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2DateTimePicker4);
+            this.Controls.Add(this.ExcpectedDate);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2DateTimePicker3);
+            this.Controls.Add(this.PregancyDate);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2DateTimePicker2);
+            this.Controls.Add(this.BreedDate);
             this.Controls.Add(this.guna2HtmlLabel10);
-            this.Controls.Add(this.bunifuMaterialTextbox7);
+            this.Controls.Add(this.CowAgeTb);
             this.Controls.Add(this.guna2HtmlLabel7);
-            this.Controls.Add(this.bunifuMaterialTextbox4);
+            this.Controls.Add(this.CowNameTb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2HtmlLabel12);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.DGV);
             this.Controls.Add(this.guna2HtmlLabel11);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.HeatDate);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -757,7 +758,7 @@ namespace Dairy
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -765,9 +766,9 @@ namespace Dairy
 
         #endregion
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CowAgeTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CowNameTb;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -796,22 +797,22 @@ namespace Dairy
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView DGV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker HeatDate;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker BreedDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker PregancyDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker4;
+        private Guna.UI2.WinForms.Guna2DateTimePicker ExcpectedDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker CalvedDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox CowIdCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox RemarkesTb;
     }
 }
