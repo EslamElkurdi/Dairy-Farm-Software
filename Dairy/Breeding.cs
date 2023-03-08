@@ -121,5 +121,10 @@ namespace Dairy
         {
             
         }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
+        }
     }
 }
