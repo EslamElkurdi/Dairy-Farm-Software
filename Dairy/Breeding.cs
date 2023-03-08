@@ -127,7 +127,28 @@ namespace Dairy
         }
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || CowAgeTb.Text == "" || RemarkesTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into BreedTbl values('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + PregancyDate.Value.Date + "','" + ExcpectedDate.Value.Date + "', '" + CalvedDate.Value.Date + "', '" + CowAgeTb.Text + "', '" + RemarkesTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed saved");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
