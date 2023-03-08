@@ -102,7 +102,7 @@ namespace Dairy
             con.Close();
         }
 
-        String CowAge;
+       
         private void GetCowName()
         {
             con.Open();
@@ -114,7 +114,7 @@ namespace Dairy
             foreach (DataRow dr in dt.Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
-                CowAge = dr["Age"].ToString();
+                CowAgeTb.Text = dr["Age"].ToString();
             }
 
             con.Close();
