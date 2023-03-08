@@ -16,6 +16,8 @@ namespace Dairy
         public Breeding()
         {
             InitializeComponent();
+            FillCowId();
+            populate();
         }
 
         private void bunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
