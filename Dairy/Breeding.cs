@@ -117,9 +117,17 @@ namespace Dairy
 
             con.Close();
         }
+
+        private void Clear()
+        {
+            CowIdCb.SelectedIndex = -1;
+            CowNameTb.Text = "";
+            CowAgeTb.Text = "";
+            RemarkesTb.Text = "";
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
