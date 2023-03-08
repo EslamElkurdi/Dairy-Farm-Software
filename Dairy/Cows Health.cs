@@ -231,7 +231,28 @@ namespace Dairy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || VelTb.Text == "" || TreatmentTb.Text == "" || EventTb.Text == "" || DiagTb.Text == "" || CostTb.Text == "")
+            {
+                MessageBox.Show("Select The Report");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update HealthTbl set CowId='" + CowIdCb.SelectedValue.ToString() + "',CowName= " + CowNameTb.Text + ",RepDate=" + dateTb.Value.Date + ",Event=" + EventTb.Text + ",Diagnosis=" + DiagTb.Text + ",Treatment='" + TreatmentTb.Text + ",Cost='" + CostTb.Text + ",VetName='" + VelTb.Text + "' where RepId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
