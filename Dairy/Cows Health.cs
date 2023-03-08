@@ -124,6 +124,11 @@ namespace Dairy
             obj.Show();
             this.Hide();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
