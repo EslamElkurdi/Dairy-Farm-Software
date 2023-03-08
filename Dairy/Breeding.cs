@@ -88,6 +88,18 @@ namespace Dairy
             con.Close();
         }
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from BreedTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowDG.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             
