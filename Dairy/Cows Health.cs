@@ -161,6 +161,18 @@ namespace Dairy
             CowIdCb.DataSource = dt;
             con.Close();
         }
+
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from CowTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealthDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
     }
 
 
