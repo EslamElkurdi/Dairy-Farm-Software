@@ -16,6 +16,8 @@ namespace Dairy
         public Cows_Health()
         {
             InitializeComponent();
+            populate();
+            FillCowId();
         }
 
         private void label1_Click(object sender, EventArgs e)
