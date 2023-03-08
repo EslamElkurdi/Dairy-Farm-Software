@@ -451,11 +451,11 @@ namespace Dairy
             // 
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(846, 463);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(807, 455);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(90, 24);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(94, 24);
             this.guna2HtmlLabel12.TabIndex = 109;
-            this.guna2HtmlLabel12.Text = "Cows List";
+            this.guna2HtmlLabel12.Text = "Breed List";
             // 
             // guna2HtmlLabel11
             // 
@@ -701,6 +701,7 @@ namespace Dairy
             this.CowDG.ThemeStyle.RowsStyle.Height = 24;
             this.CowDG.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.CowDG.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CowDG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowDG_CellContentClick);
             // 
             // Breeding
             // 

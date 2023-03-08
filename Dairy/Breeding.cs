@@ -157,5 +157,27 @@ namespace Dairy
         {
             GetCowName();
         }
+
+        int key = 0;
+        private void CowDG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CowIdCb.SelectedValue = CowDG.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = CowDG.SelectedRows[0].Cells[2].Value.ToString();
+            HeatDate.Text = CowDG.SelectedRows[0].Cells[3].Value.ToString();
+            BreedDate.Text = CowDG.SelectedRows[0].Cells[4].Value.ToString();
+            PregancyDate.Text = CowDG.SelectedRows[0].Cells[5].Value.ToString();
+            ExcpectedDate.Text = CowDG.SelectedRows[0].Cells[6].Value.ToString();
+           CalvedDate.Text = CowDG.SelectedRows[0].Cells[7].Value.ToString();
+           RemarkesTb.Text = CowDG.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(CowDG.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
