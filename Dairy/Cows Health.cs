@@ -175,6 +175,58 @@ namespace Dairy
             HealthDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        private void GetCowName()
+        {
+            con.Open();
+            String query = "select * from CowTbl where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+
+            con.Close();
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || VelTb.Text == "" || TreatmentTb.Text == "" || EventTb.Text == "" || DiagTb.Text == "" || CostTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into HealthTbl values('" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + dateTb.Value.Date + "','" + EventTb.Text + "','" + DiagTb.Text + "','" + TreatmentTb.Text + "', '" + CostTb.Text + "', '" + VelTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Health issue saved");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void guna2HtmlLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
