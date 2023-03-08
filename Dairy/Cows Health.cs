@@ -146,6 +146,7 @@ namespace Dairy
             EventTb.Text = "";
             TreatmentTb.Text = "";
             VelTb.Text = "";
+            key = 0;
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -236,6 +237,12 @@ namespace Dairy
         private void button4_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        int key = 0;
+        private void HealthDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 
