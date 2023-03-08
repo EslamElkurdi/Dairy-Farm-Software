@@ -129,6 +129,21 @@ namespace Dairy
         {
 
         }
+
+        private void Cows_Health_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            CostTb.Text = "";
+            DiagTb.Text = "";
+            EventTb.Text = "";
+            TreatmentTb.Text = "";
+            VelTb.Text = "";
+        }
     }
 
 

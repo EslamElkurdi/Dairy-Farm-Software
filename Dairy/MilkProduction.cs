@@ -252,5 +252,10 @@ namespace Dairy
                 }
             }
         }
+
+        private void CowIdCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
