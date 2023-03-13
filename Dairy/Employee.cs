@@ -43,7 +43,7 @@ namespace Dairy
         private void populate()
         {
             con.Open();
-            string Query = "select * from HealthTbl";
+            string Query = "select * from EmployeeTbl";
             SqlDataAdapter sda = new SqlDataAdapter(Query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
