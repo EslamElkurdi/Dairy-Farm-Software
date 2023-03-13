@@ -108,5 +108,25 @@ namespace Dairy
                 }
             }
         }
+
+        int key = 0;
+        private void HealthDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            NameTb.Text = HealthDGV.SelectedRows[0].Cells[1].Value.ToString();
+            dateTb.Text = HealthDGV.SelectedRows[0].Cells[2].Value.ToString();
+            Gender.Text = HealthDGV.SelectedRows[0].Cells[3].Value.ToString();
+            Phone.Text = HealthDGV.SelectedRows[0].Cells[4].Value.ToString();
+            Address.Text = HealthDGV.SelectedRows[0].Cells[5].Value.ToString();
+            
+            if (NameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(HealthDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
