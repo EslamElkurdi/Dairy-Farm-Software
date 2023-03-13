@@ -29,6 +29,9 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TreatmentTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CowIdCb = new System.Windows.Forms.ComboBox();
@@ -46,8 +49,15 @@ namespace Dairy
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.HealthDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel8
@@ -256,6 +266,112 @@ namespace Dairy
             this.bunifuMaterialTextbox1.TabIndex = 103;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // guna2HtmlLabel12
+            // 
+            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(871, 465);
+            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(122, 24);
+            this.guna2HtmlLabel12.TabIndex = 91;
+            this.guna2HtmlLabel12.Text = "Employee list";
+            // 
+            // HealthDGV
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.HealthDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealthDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.HealthDGV.ColumnHeadersHeight = 4;
+            this.HealthDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealthDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.HealthDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.HealthDGV.Location = new System.Drawing.Point(434, 507);
+            this.HealthDGV.Name = "HealthDGV";
+            this.HealthDGV.RowHeadersVisible = false;
+            this.HealthDGV.RowHeadersWidth = 51;
+            this.HealthDGV.RowTemplate.Height = 24;
+            this.HealthDGV.Size = new System.Drawing.Size(958, 285);
+            this.HealthDGV.TabIndex = 98;
+            this.HealthDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.HealthDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.HealthDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.HealthDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.HealthDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.HealthDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.HealthDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.HealthDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.HealthDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.HealthDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HealthDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.HealthDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.HealthDGV.ThemeStyle.HeaderStyle.Height = 4;
+            this.HealthDGV.ThemeStyle.ReadOnly = false;
+            this.HealthDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.HealthDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.HealthDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HealthDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.HealthDGV.ThemeStyle.RowsStyle.Height = 24;
+            this.HealthDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.HealthDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Gray;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1127, 376);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(123, 49);
+            this.button4.TabIndex = 95;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(975, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 49);
+            this.button1.TabIndex = 92;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(789, 376);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 49);
+            this.button2.TabIndex = 93;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(607, 376);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 49);
+            this.button3.TabIndex = 94;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,9 +381,15 @@ namespace Dairy
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2HtmlLabel8);
+            this.Controls.Add(this.HealthDGV);
             this.Controls.Add(this.TreatmentTb);
             this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.dateTb);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.guna2HtmlLabel12);
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -280,6 +402,7 @@ namespace Dairy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HealthDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +427,11 @@ namespace Dairy
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        private Guna.UI2.WinForms.Guna2DataGridView HealthDGV;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
