@@ -71,9 +71,17 @@ namespace Dairy
 
         private void guna2HtmlLabel8_Click(object sender, EventArgs e)
         {
-
+            NameTb.Text = "";
+            Gender.SelectedIndex = -1;
+            Address.Text = "";
+            Phone.Text = "";
         }
 
+
+        private void clear() 
+        {
+            
+        }
         private void button3_Click(object sender, EventArgs e)
         {
             if (NameTb.Text == "" || Gender.SelectedIndex == -1 || Address.Text == "" || Phone.Text == "")
