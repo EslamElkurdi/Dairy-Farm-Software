@@ -99,6 +99,7 @@ namespace Dairy
                     MessageBox.Show("Employee Saved");
                     con.Close();
                     populate();
+                    clear();
                     
                 }
                 catch (Exception ex)
