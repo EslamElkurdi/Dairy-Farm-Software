@@ -36,8 +36,8 @@ namespace Dairy
             DataTable dt = new DataTable();
             dt.Columns.Add("CowId", typeof(int));
             dt.Load(Rdr);
-            CowIdCb.ValueMember = "CowId";
-            CowIdCb.DataSource = dt;
+            Gender.ValueMember = "CowId";
+            Gender.DataSource = dt;
             con.Close();
         }
 
@@ -56,14 +56,14 @@ namespace Dairy
         private void GetCowName()
         {
             con.Open();
-            String query = "select * from CowTbl where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            String query = "select * from CowTbl where CowId=" + Gender.SelectedValue.ToString() + "";
             SqlCommand cmd = new SqlCommand(query, con);
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             sda.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                CowNameTb.Text = dr["CowName"].ToString();
+                NameTb.Text = dr["CowName"].ToString();
             }
 
             con.Close();
@@ -72,6 +72,32 @@ namespace Dairy
         private void guna2HtmlLabel8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (NameTb.Text == "" || Gender.SelectedIndex == -1 || Address.Text == "" || Phone.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + dateTb.Value.Date + "','" + Gender.SelectedValue.ToString() + "','" + Phone.Text + "','" +Address.Text +"')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Saved");
+                    con.Close();
+                    populate();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

@@ -33,13 +33,13 @@ namespace Dairy
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.TreatmentTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.Address = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Gender = new System.Windows.Forms.ComboBox();
             this.dateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.CowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.NameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,7 +48,7 @@ namespace Dairy
             this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Phone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.HealthDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button4 = new System.Windows.Forms.Button();
@@ -71,35 +71,35 @@ namespace Dairy
             this.guna2HtmlLabel8.Text = "Date";
             this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
-            // TreatmentTb
+            // Address
             // 
-            this.TreatmentTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TreatmentTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TreatmentTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TreatmentTb.HintForeColor = System.Drawing.Color.Empty;
-            this.TreatmentTb.HintText = "";
-            this.TreatmentTb.isPassword = false;
-            this.TreatmentTb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.TreatmentTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.TreatmentTb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.TreatmentTb.LineThickness = 3;
-            this.TreatmentTb.Location = new System.Drawing.Point(855, 271);
-            this.TreatmentTb.Margin = new System.Windows.Forms.Padding(4);
-            this.TreatmentTb.Name = "TreatmentTb";
-            this.TreatmentTb.Size = new System.Drawing.Size(198, 44);
-            this.TreatmentTb.TabIndex = 97;
-            this.TreatmentTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Address.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Address.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Address.HintForeColor = System.Drawing.Color.Empty;
+            this.Address.HintText = "";
+            this.Address.isPassword = false;
+            this.Address.LineFocusedColor = System.Drawing.Color.Blue;
+            this.Address.LineIdleColor = System.Drawing.Color.Gray;
+            this.Address.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.Address.LineThickness = 3;
+            this.Address.Location = new System.Drawing.Point(855, 271);
+            this.Address.Margin = new System.Windows.Forms.Padding(4);
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(198, 44);
+            this.Address.TabIndex = 97;
+            this.Address.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // CowIdCb
+            // Gender
             // 
-            this.CowIdCb.FormattingEnabled = true;
-            this.CowIdCb.Items.AddRange(new object[] {
+            this.Gender.FormattingEnabled = true;
+            this.Gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.CowIdCb.Location = new System.Drawing.Point(975, 159);
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(198, 24);
-            this.CowIdCb.TabIndex = 96;
+            this.Gender.Location = new System.Drawing.Point(975, 159);
+            this.Gender.Name = "Gender";
+            this.Gender.Size = new System.Drawing.Size(198, 24);
+            this.Gender.TabIndex = 96;
             // 
             // dateTb
             // 
@@ -145,25 +145,25 @@ namespace Dairy
             this.guna2HtmlLabel2.Text = "Name";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
-            // CowNameTb
+            // NameTb
             // 
-            this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.Enabled = false;
-            this.CowNameTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.CowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CowNameTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CowNameTb.HintText = "";
-            this.CowNameTb.isPassword = false;
-            this.CowNameTb.LineFocusedColor = System.Drawing.Color.Blue;
-            this.CowNameTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CowNameTb.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.CowNameTb.LineThickness = 3;
-            this.CowNameTb.Location = new System.Drawing.Point(391, 139);
-            this.CowNameTb.Margin = new System.Windows.Forms.Padding(4);
-            this.CowNameTb.Name = "CowNameTb";
-            this.CowNameTb.Size = new System.Drawing.Size(198, 44);
-            this.CowNameTb.TabIndex = 82;
-            this.CowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameTb.Enabled = false;
+            this.NameTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.NameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.NameTb.HintText = "";
+            this.NameTb.isPassword = false;
+            this.NameTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.NameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.NameTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.NameTb.LineThickness = 3;
+            this.NameTb.Location = new System.Drawing.Point(391, 139);
+            this.NameTb.Margin = new System.Windows.Forms.Padding(4);
+            this.NameTb.Name = "NameTb";
+            this.NameTb.Size = new System.Drawing.Size(198, 44);
+            this.NameTb.TabIndex = 82;
+            this.NameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pictureBox8
             // 
@@ -247,24 +247,24 @@ namespace Dairy
             this.guna2HtmlLabel3.TabIndex = 102;
             this.guna2HtmlLabel3.Text = "Phone";
             // 
-            // bunifuMaterialTextbox1
+            // Phone
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(516, 271);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 103;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Phone.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Phone.HintForeColor = System.Drawing.Color.Empty;
+            this.Phone.HintText = "";
+            this.Phone.isPassword = false;
+            this.Phone.LineFocusedColor = System.Drawing.Color.Blue;
+            this.Phone.LineIdleColor = System.Drawing.Color.Gray;
+            this.Phone.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.Phone.LineThickness = 3;
+            this.Phone.Location = new System.Drawing.Point(516, 271);
+            this.Phone.Margin = new System.Windows.Forms.Padding(4);
+            this.Phone.Name = "Phone";
+            this.Phone.Size = new System.Drawing.Size(198, 44);
+            this.Phone.TabIndex = 103;
+            this.Phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel12
             // 
@@ -371,19 +371,20 @@ namespace Dairy
             this.button3.TabIndex = 94;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1527, 836);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.Phone);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.HealthDGV);
-            this.Controls.Add(this.TreatmentTb);
-            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.Address);
+            this.Controls.Add(this.Gender);
             this.Controls.Add(this.dateTb);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -393,7 +394,7 @@ namespace Dairy
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.CowNameTb);
+            this.Controls.Add(this.NameTb);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employee";
@@ -411,13 +412,13 @@ namespace Dairy
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TreatmentTb;
-        private System.Windows.Forms.ComboBox CowIdCb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Address;
+        private System.Windows.Forms.ComboBox Gender;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CowNameTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox NameTb;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
@@ -426,7 +427,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Phone;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2DataGridView HealthDGV;
         private System.Windows.Forms.Button button4;
