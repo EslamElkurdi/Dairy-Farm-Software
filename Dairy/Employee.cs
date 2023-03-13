@@ -75,6 +75,7 @@ namespace Dairy
             Gender.SelectedIndex = -1;
             Address.Text = "";
             Phone.Text = "";
+            key = 0;
         }
 
 
@@ -127,6 +128,11 @@ namespace Dairy
             {
                 key = Convert.ToInt32(HealthDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }
