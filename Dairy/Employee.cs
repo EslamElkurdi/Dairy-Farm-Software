@@ -134,5 +134,31 @@ namespace Dairy
         {
             clear();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Employee to be deleted");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from EmployeeTbl where EmpId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Deleted");
+                    con.Close();
+                    populate();
+                    clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
