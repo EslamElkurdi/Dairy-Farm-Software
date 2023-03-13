@@ -160,5 +160,31 @@ namespace Dairy
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (NameTb.Text == "" || Gender.SelectedIndex == -1 || Address.Text == "" || Phone.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "',EmpDob= '" + dateTb.Value.Date + "',Gender='" + Gender.SelectedValue.ToString() + "',phone=" + Phone.Text + ",Address=" + Address.Text + "' where RepId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated");
+                    con.Close();
+                    populate();
+                    clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
