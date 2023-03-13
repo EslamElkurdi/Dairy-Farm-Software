@@ -40,6 +40,18 @@ namespace Dairy
             con.Close();
         }
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from HealthTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealthDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
         private void guna2HtmlLabel8_Click(object sender, EventArgs e)
         {
 
