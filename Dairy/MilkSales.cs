@@ -17,6 +17,7 @@ namespace Dairy
         {
             InitializeComponent();
             FillEmployeeId();
+            populate();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
