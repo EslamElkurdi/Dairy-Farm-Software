@@ -67,8 +67,6 @@ namespace Dairy
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Delete = new System.Windows.Forms.Button();
-            this.Update = new System.Windows.Forms.Button();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -522,30 +520,6 @@ namespace Dairy
             this.label1.Text = "Milk Sales";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Delete
-            // 
-            this.Delete.BackColor = System.Drawing.Color.Gray;
-            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete.Location = new System.Drawing.Point(800, 374);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(123, 49);
-            this.Delete.TabIndex = 91;
-            this.Delete.Text = "Delete";
-            this.Delete.UseVisualStyleBackColor = false;
-            this.Delete.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Update
-            // 
-            this.Update.BackColor = System.Drawing.Color.Gray;
-            this.Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update.Location = new System.Drawing.Point(986, 374);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(123, 49);
-            this.Update.TabIndex = 90;
-            this.Update.Text = "Update";
-            this.Update.UseVisualStyleBackColor = false;
-            this.Update.Click += new System.EventHandler(this.button1_Click);
-            // 
             // guna2HtmlLabel12
             // 
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
@@ -586,7 +560,7 @@ namespace Dairy
             // 
             this.Clear.BackColor = System.Drawing.Color.Gray;
             this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(1138, 374);
+            this.Clear.Location = new System.Drawing.Point(954, 374);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(123, 49);
             this.Clear.TabIndex = 93;
@@ -598,7 +572,7 @@ namespace Dairy
             // 
             this.save.BackColor = System.Drawing.Color.Gray;
             this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.Location = new System.Drawing.Point(618, 374);
+            this.save.Location = new System.Drawing.Point(721, 369);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(123, 49);
             this.save.TabIndex = 92;
@@ -703,8 +677,6 @@ namespace Dairy
             this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Delete);
-            this.Controls.Add(this.Update);
             this.Controls.Add(this.guna2HtmlLabel12);
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.dateTb);
@@ -781,8 +753,6 @@ namespace Dairy
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.Button Update;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateTb;

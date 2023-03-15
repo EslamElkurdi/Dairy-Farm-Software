@@ -159,6 +159,28 @@ namespace Dairy
             clear();
         }
 
+        private void SvaeTrans() 
+        {
+           
+            
+                try
+                {
+                String sale = "sales";
+                    con.Open();
+                    string Query = "insert into IncomeTbl values('" + dateTb.Value.Date + "','" + sale + "'," + TotalTb.Text + "," +EmployeeCB.SelectedValue.ToString() + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Income Saved");
+                    con.Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (EmployeeCB.SelectedIndex == -1 || ClientNameTb.Text == "" || ClientPhoneTb.Text == "" || PriceTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
