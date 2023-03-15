@@ -159,7 +159,7 @@ namespace Dairy
             clear();
         }
 
-        private void SvaeTrans() 
+        private void SaveTrans() 
         {
            
             
@@ -198,6 +198,7 @@ namespace Dairy
                     MessageBox.Show("Milk Sales Saved");
                     con.Close();
                     populate();
+                    SaveTrans();
                     clear();
                     
                 }
