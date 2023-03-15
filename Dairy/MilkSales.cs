@@ -150,7 +150,28 @@ namespace Dairy
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (EmployeeCB.SelectedIndex == -1 || ClientNameTb.Text == "" || ClientPhoneTb.Text == "" || PriceTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into MilkSalesTbl values('" + dateTb.Value.Date + "','" + PriceTb.Text + "','" + ClientNameTb.Text + "','" + ClientPhoneTb.Text + "'," + EmployeeCB.SelectedValue.ToString() + "," + QuantityTb.Text + ", " + TotalTb.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Milk Sales Saved");
+                    con.Close();
+                    populate();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
