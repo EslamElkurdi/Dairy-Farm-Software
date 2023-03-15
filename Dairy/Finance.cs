@@ -93,7 +93,11 @@ namespace Dairy
             con.Close();
         }
 
-       
+        private void clearExp()
+        {
+            Purpose.SelectedIndex = -1;
+            Amount.Text = "";
+        }
 
 
 
