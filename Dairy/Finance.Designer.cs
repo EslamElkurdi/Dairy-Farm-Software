@@ -84,6 +84,7 @@ namespace Dairy
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label4 = new System.Windows.Forms.Label();
+            this.EmpID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -144,9 +145,9 @@ namespace Dairy
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(774, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 31);
+            this.label1.Size = new System.Drawing.Size(101, 31);
             this.label1.TabIndex = 127;
-            this.label1.Text = "Milk Sales";
+            this.label1.Text = "Finance";
             // 
             // guna2HtmlLabel5
             // 
@@ -747,11 +748,22 @@ namespace Dairy
             this.label4.TabIndex = 24;
             this.label4.Text = "Incomes";
             // 
+            // EmpID
+            // 
+            this.EmpID.BackColor = System.Drawing.Color.Transparent;
+            this.EmpID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpID.Location = new System.Drawing.Point(1338, 17);
+            this.EmpID.Name = "EmpID";
+            this.EmpID.Size = new System.Drawing.Size(115, 24);
+            this.EmpID.TabIndex = 130;
+            this.EmpID.Text = "Employee ID";
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1456, 838);
+            this.Controls.Add(this.EmpID);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label1);
@@ -846,5 +858,6 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel EmpID;
     }
 }

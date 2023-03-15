@@ -121,7 +121,27 @@ namespace Dairy
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            if (Purpose.SelectedIndex == -1 || Amount.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into ExpenditureTbl values('" + dateTb.Value.Date + "','" + Purpose.SelectedItem.ToString() + "'," + Amount.Text + "," + EmpID.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved");
+                    con.Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 
