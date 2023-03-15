@@ -113,8 +113,8 @@ namespace Dairy
 
         private void clearInc()
         {
-            Purpose.SelectedIndex = -1;
-            Amount.Text = "";
+            TypeCb.SelectedIndex = -1;
+           AmountTb.Text = "";
         }
 
 
