@@ -136,7 +136,7 @@ namespace Dairy
                     MessageBox.Show("Expenditure Saved");
                     con.Close();
                     Exppopulate();
-                    
+                    clearExp();
                 }
                 catch (Exception ex)
                 {
