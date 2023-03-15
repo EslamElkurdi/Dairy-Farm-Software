@@ -66,9 +66,9 @@ namespace Dairy
             this.button3 = new System.Windows.Forms.Button();
             this.EventTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Amount = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Purpose = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -378,9 +378,9 @@ namespace Dairy
             this.panel9.Controls.Add(this.button3);
             this.panel9.Controls.Add(this.EventTb);
             this.panel9.Controls.Add(this.Amount);
-            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.Purpose);
             this.panel9.Controls.Add(this.guna2HtmlLabel2);
-            this.panel9.Controls.Add(this.guna2DateTimePicker1);
+            this.panel9.Controls.Add(this.dateTb);
             this.panel9.Controls.Add(this.guna2HtmlLabel1);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Location = new System.Drawing.Point(339, 71);
@@ -460,6 +460,7 @@ namespace Dairy
             this.button3.TabIndex = 92;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // EventTb
             // 
@@ -490,19 +491,19 @@ namespace Dairy
             this.Amount.TabIndex = 90;
             this.Amount.Text = "Amount";
             // 
-            // comboBox1
+            // Purpose
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Purpose.FormattingEnabled = true;
+            this.Purpose.Items.AddRange(new object[] {
             "maintainance",
             "Food",
             "Tax",
             "Salary",
             "Others"});
-            this.comboBox1.Location = new System.Drawing.Point(21, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 24);
-            this.comboBox1.TabIndex = 89;
+            this.Purpose.Location = new System.Drawing.Point(21, 169);
+            this.Purpose.Name = "Purpose";
+            this.Purpose.Size = new System.Drawing.Size(198, 24);
+            this.Purpose.TabIndex = 89;
             // 
             // guna2HtmlLabel2
             // 
@@ -514,18 +515,18 @@ namespace Dairy
             this.guna2HtmlLabel2.TabIndex = 88;
             this.guna2HtmlLabel2.Text = "Purpose";
             // 
-            // guna2DateTimePicker1
+            // dateTb
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(21, 81);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(143, 36);
-            this.guna2DateTimePicker1.TabIndex = 87;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.dateTb.Checked = true;
+            this.dateTb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateTb.Location = new System.Drawing.Point(21, 81);
+            this.dateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateTb.Name = "dateTb";
+            this.dateTb.Size = new System.Drawing.Size(143, 36);
+            this.dateTb.TabIndex = 87;
+            this.dateTb.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel1
             // 
@@ -825,8 +826,8 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateTb;
+        private System.Windows.Forms.ComboBox Purpose;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EventTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel Amount;
         private System.Windows.Forms.Button button3;
