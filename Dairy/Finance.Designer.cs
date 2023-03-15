@@ -65,7 +65,7 @@ namespace Dairy
             this.DGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.EventTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.Amount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -377,7 +377,7 @@ namespace Dairy
             this.panel9.Controls.Add(this.DGV);
             this.panel9.Controls.Add(this.button3);
             this.panel9.Controls.Add(this.EventTb);
-            this.panel9.Controls.Add(this.guna2HtmlLabel11);
+            this.panel9.Controls.Add(this.Amount);
             this.panel9.Controls.Add(this.comboBox1);
             this.panel9.Controls.Add(this.guna2HtmlLabel2);
             this.panel9.Controls.Add(this.guna2DateTimePicker1);
@@ -480,15 +480,15 @@ namespace Dairy
             this.EventTb.TabIndex = 91;
             this.EventTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2HtmlLabel11
+            // Amount
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(21, 209);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(54, 24);
-            this.guna2HtmlLabel11.TabIndex = 90;
-            this.guna2HtmlLabel11.Text = "Event";
+            this.Amount.BackColor = System.Drawing.Color.Transparent;
+            this.Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Amount.Location = new System.Drawing.Point(21, 209);
+            this.Amount.Name = "Amount";
+            this.Amount.Size = new System.Drawing.Size(70, 24);
+            this.Amount.TabIndex = 90;
+            this.Amount.Text = "Amount";
             // 
             // comboBox1
             // 
@@ -828,7 +828,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EventTb;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Amount;
         private System.Windows.Forms.Button button3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2DataGridView DGV;
