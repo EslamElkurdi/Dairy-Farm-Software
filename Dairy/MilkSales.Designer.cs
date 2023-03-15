@@ -29,9 +29,9 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -70,13 +70,13 @@ namespace Dairy
             this.Delete = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.Button();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.SalesGDV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.EmployeeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.SalesGD = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel7.SuspendLayout();
@@ -93,7 +93,7 @@ namespace Dairy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SalesGDV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesGD)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel15
@@ -557,59 +557,6 @@ namespace Dairy
             this.guna2HtmlLabel12.Text = "Sales Report";
             this.guna2HtmlLabel12.Click += new System.EventHandler(this.guna2HtmlLabel12_Click);
             // 
-            // SalesGDV
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.SalesGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.SalesGDV.ColumnHeadersHeight = 4;
-            this.SalesGDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesGDV.DefaultCellStyle = dataGridViewCellStyle6;
-            this.SalesGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SalesGDV.Location = new System.Drawing.Point(465, 493);
-            this.SalesGDV.Name = "SalesGDV";
-            this.SalesGDV.RowHeadersVisible = false;
-            this.SalesGDV.RowHeadersWidth = 51;
-            this.SalesGDV.RowTemplate.Height = 24;
-            this.SalesGDV.Size = new System.Drawing.Size(958, 285);
-            this.SalesGDV.TabIndex = 88;
-            this.SalesGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.SalesGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.SalesGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.SalesGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.SalesGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.SalesGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.SalesGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SalesGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SalesGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.SalesGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalesGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.SalesGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.SalesGDV.ThemeStyle.HeaderStyle.Height = 4;
-            this.SalesGDV.ThemeStyle.ReadOnly = false;
-            this.SalesGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.SalesGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.SalesGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SalesGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.SalesGDV.ThemeStyle.RowsStyle.Height = 24;
-            this.SalesGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SalesGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.SalesGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
-            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
@@ -684,11 +631,64 @@ namespace Dairy
             this.guna2HtmlLabel1.TabIndex = 94;
             this.guna2HtmlLabel1.Text = "Employee Id";
             // 
+            // SalesGD
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SalesGD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesGD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.SalesGD.ColumnHeadersHeight = 4;
+            this.SalesGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesGD.DefaultCellStyle = dataGridViewCellStyle3;
+            this.SalesGD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesGD.Location = new System.Drawing.Point(424, 517);
+            this.SalesGD.Name = "SalesGD";
+            this.SalesGD.RowHeadersVisible = false;
+            this.SalesGD.RowHeadersWidth = 51;
+            this.SalesGD.RowTemplate.Height = 24;
+            this.SalesGD.Size = new System.Drawing.Size(958, 285);
+            this.SalesGD.TabIndex = 96;
+            this.SalesGD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.SalesGD.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.SalesGD.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.SalesGD.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.SalesGD.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.SalesGD.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.SalesGD.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesGD.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SalesGD.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SalesGD.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesGD.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.SalesGD.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SalesGD.ThemeStyle.HeaderStyle.Height = 4;
+            this.SalesGD.ThemeStyle.ReadOnly = false;
+            this.SalesGD.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.SalesGD.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SalesGD.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SalesGD.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SalesGD.ThemeStyle.RowsStyle.Height = 24;
+            this.SalesGD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesGD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
+            this.Controls.Add(this.SalesGD);
             this.Controls.Add(this.EmployeeCB);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel9);
@@ -706,7 +706,6 @@ namespace Dairy
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.guna2HtmlLabel12);
-            this.Controls.Add(this.SalesGDV);
             this.Controls.Add(this.guna2HtmlLabel11);
             this.Controls.Add(this.dateTb);
             this.Controls.Add(this.Clear);
@@ -739,7 +738,7 @@ namespace Dairy
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SalesGDV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesGD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -785,12 +784,12 @@ namespace Dairy
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Update;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2DataGridView SalesGDV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateTb;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button save;
         private Guna.UI2.WinForms.Guna2ComboBox EmployeeCB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2DataGridView SalesGD;
     }
 }
