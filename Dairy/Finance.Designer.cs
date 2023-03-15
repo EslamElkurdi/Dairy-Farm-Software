@@ -81,7 +81,7 @@ namespace Dairy
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dateIncome = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.EmpID = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -561,7 +561,7 @@ namespace Dairy
             this.panel10.Controls.Add(this.guna2HtmlLabel7);
             this.panel10.Controls.Add(this.comboBox2);
             this.panel10.Controls.Add(this.guna2HtmlLabel8);
-            this.panel10.Controls.Add(this.guna2DateTimePicker2);
+            this.panel10.Controls.Add(this.dateIncome);
             this.panel10.Controls.Add(this.guna2HtmlLabel9);
             this.panel10.Controls.Add(this.label4);
             this.panel10.Location = new System.Drawing.Point(339, 428);
@@ -714,18 +714,18 @@ namespace Dairy
             this.guna2HtmlLabel8.TabIndex = 88;
             this.guna2HtmlLabel8.Text = "Type";
             // 
-            // guna2DateTimePicker2
+            // dateIncome
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(21, 81);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(143, 36);
-            this.guna2DateTimePicker2.TabIndex = 87;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.dateIncome.Checked = true;
+            this.dateIncome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateIncome.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateIncome.Location = new System.Drawing.Point(21, 81);
+            this.dateIncome.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateIncome.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateIncome.Name = "dateIncome";
+            this.dateIncome.Size = new System.Drawing.Size(143, 36);
+            this.dateIncome.TabIndex = 87;
+            this.dateIncome.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
             // 
             // guna2HtmlLabel9
             // 
@@ -855,7 +855,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.ComboBox comboBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateIncome;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2HtmlLabel EmpID;
