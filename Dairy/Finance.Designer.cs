@@ -85,6 +85,8 @@ namespace Dairy
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.EmpID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dateExp = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -374,6 +376,8 @@ namespace Dairy
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.dateExp);
+            this.panel9.Controls.Add(this.guna2HtmlLabel11);
             this.panel9.Controls.Add(this.guna2HtmlLabel12);
             this.panel9.Controls.Add(this.DGV);
             this.panel9.Controls.Add(this.button3);
@@ -422,12 +426,12 @@ namespace Dairy
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGV.Location = new System.Drawing.Point(462, 42);
+            this.DGV.Location = new System.Drawing.Point(462, 108);
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersVisible = false;
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 24;
-            this.DGV.Size = new System.Drawing.Size(567, 285);
+            this.DGV.Size = new System.Drawing.Size(567, 219);
             this.DGV.TabIndex = 93;
             this.DGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -600,9 +604,9 @@ namespace Dairy
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(649, 12);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(148, 24);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(104, 24);
             this.guna2HtmlLabel6.TabIndex = 94;
-            this.guna2HtmlLabel6.Text = "Expenditure List";
+            this.guna2HtmlLabel6.Text = "Income List";
             // 
             // guna2DataGridView2
             // 
@@ -764,6 +768,31 @@ namespace Dairy
             this.EmpID.TabIndex = 130;
             this.EmpID.Text = "Employee ID";
             // 
+            // dateExp
+            // 
+            this.dateExp.Checked = true;
+            this.dateExp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateExp.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateExp.Location = new System.Drawing.Point(724, 53);
+            this.dateExp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateExp.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateExp.Name = "dateExp";
+            this.dateExp.Size = new System.Drawing.Size(142, 28);
+            this.dateExp.TabIndex = 98;
+            this.dateExp.Value = new System.DateTime(2023, 2, 27, 17, 41, 32, 310);
+            this.dateExp.ValueChanged += new System.EventHandler(this.dateExp_ValueChanged);
+            // 
+            // guna2HtmlLabel11
+            // 
+            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(669, 57);
+            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
+            this.guna2HtmlLabel11.Size = new System.Drawing.Size(49, 24);
+            this.guna2HtmlLabel11.TabIndex = 97;
+            this.guna2HtmlLabel11.Text = "Filter";
+            this.guna2HtmlLabel11.Click += new System.EventHandler(this.guna2HtmlLabel11_Click);
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -865,5 +894,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2HtmlLabel EmpID;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateExp;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
     }
 }

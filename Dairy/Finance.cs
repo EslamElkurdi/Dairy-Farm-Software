@@ -179,6 +179,23 @@ namespace Dairy
                 }
             }
         }
+
+        private void guna2HtmlLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateExp_ValueChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string Query = "select * from ExpenditureTbl where ExpDate = '"+dateExp.Value.Date+"'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            DGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
     }
 
 
