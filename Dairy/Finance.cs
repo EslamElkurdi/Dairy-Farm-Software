@@ -16,6 +16,7 @@ namespace Dairy
         public Finance()
         {
             InitializeComponent();
+            Incpopulate();
         }
 
         private void guna2HtmlLabel10_Click(object sender, EventArgs e)
