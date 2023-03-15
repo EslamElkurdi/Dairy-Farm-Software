@@ -161,7 +161,7 @@ namespace Dairy
                     string Query = "insert into IncomeTbl values('" + dateIncome.Value.Date + "','" + Purpose.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpID.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Expenditure Saved");
+                    MessageBox.Show("Income Saved");
                     con.Close();
                     Incpopulate();
                     clearInc();
