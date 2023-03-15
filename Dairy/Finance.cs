@@ -135,6 +135,7 @@ namespace Dairy
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expenditure Saved");
                     con.Close();
+                    Exppopulate();
                     
                 }
                 catch (Exception ex)
