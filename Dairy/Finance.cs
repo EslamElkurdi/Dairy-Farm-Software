@@ -81,6 +81,23 @@ namespace Dairy
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
+        private void Exppopulate()
+        {
+            con.Open();
+            string Query = "select * from ExpenditureTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            DGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
+       
+
+
+
+
         private void button3_Click(object sender, EventArgs e)
         {
             
