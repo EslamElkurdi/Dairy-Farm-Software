@@ -48,6 +48,16 @@ namespace Dairy
             con.Close();
         }
 
+        private void clear()
+        {
+            TotalTb.Text = "";
+            QuantityTb.Text = "";
+            PriceTb.Text = "";
+            ClientPhoneTb.Text = "";
+            ClientNameTb.Text = "";
+            EmployeeCB.SelectedIndex = -1;
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
