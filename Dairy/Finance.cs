@@ -111,6 +111,12 @@ namespace Dairy
             con.Close();
         }
 
+        private void clearInc()
+        {
+            Purpose.SelectedIndex = -1;
+            Amount.Text = "";
+        }
+
 
 
         private void button3_Click(object sender, EventArgs e)
