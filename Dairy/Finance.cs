@@ -17,6 +17,7 @@ namespace Dairy
         {
             InitializeComponent();
             Incpopulate();
+            Exppopulate();
         }
 
         private void guna2HtmlLabel10_Click(object sender, EventArgs e)
