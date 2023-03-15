@@ -27,7 +27,14 @@ namespace Dairy
 
         private void guna2DateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
-
+            con.Open();
+            string Query = "select * from IncomeTbl where IncDate = '"+dateInc.Value.Date+"'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            DGV.DataSource = ds.Tables[0];
+            con.Close();
         }
 
        
