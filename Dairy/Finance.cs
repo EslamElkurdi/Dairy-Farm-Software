@@ -99,6 +99,17 @@ namespace Dairy
             Amount.Text = "";
         }
 
+        private void Incpopulate()
+        {
+            con.Open();
+            string Query = "select * from IncomeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            DGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
 
 
 
