@@ -77,7 +77,7 @@ namespace Dairy
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AmountTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TypeCb = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -557,7 +557,7 @@ namespace Dairy
             this.panel10.Controls.Add(this.guna2HtmlLabel6);
             this.panel10.Controls.Add(this.guna2DataGridView2);
             this.panel10.Controls.Add(this.button1);
-            this.panel10.Controls.Add(this.bunifuMaterialTextbox2);
+            this.panel10.Controls.Add(this.AmountTb);
             this.panel10.Controls.Add(this.guna2HtmlLabel7);
             this.panel10.Controls.Add(this.TypeCb);
             this.panel10.Controls.Add(this.guna2HtmlLabel8);
@@ -667,24 +667,24 @@ namespace Dairy
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // bunifuMaterialTextbox2
+            // AmountTb
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(21, 240);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(198, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 91;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AmountTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.AmountTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AmountTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AmountTb.HintText = "";
+            this.AmountTb.isPassword = false;
+            this.AmountTb.LineFocusedColor = System.Drawing.Color.Blue;
+            this.AmountTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AmountTb.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.AmountTb.LineThickness = 3;
+            this.AmountTb.Location = new System.Drawing.Point(21, 240);
+            this.AmountTb.Margin = new System.Windows.Forms.Padding(4);
+            this.AmountTb.Name = "AmountTb";
+            this.AmountTb.Size = new System.Drawing.Size(198, 44);
+            this.AmountTb.TabIndex = 91;
+            this.AmountTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2HtmlLabel7
             // 
@@ -851,7 +851,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
         private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AmountTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.ComboBox TypeCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
