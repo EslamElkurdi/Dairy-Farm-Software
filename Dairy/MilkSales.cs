@@ -175,6 +175,7 @@ namespace Dairy
                     MessageBox.Show("Milk Sales Saved");
                     con.Close();
                     populate();
+                    clear();
                     
                 }
                 catch (Exception ex)
