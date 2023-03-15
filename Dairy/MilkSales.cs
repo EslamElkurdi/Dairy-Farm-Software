@@ -24,13 +24,13 @@ namespace Dairy
         private void FillCowId()
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("select CowId from CowsTbl");
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl");
             SqlDataReader Rdr;
             Rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Columns.Add("CowId", typeof(int));
+            dt.Columns.Add("EmpId", typeof(int));
             dt.Load(Rdr);
-            CowIdCB.ValueMember = "CowId";
+            CowIdCB.ValueMember = "EmpId";
             CowIdCB.DataSource = dt;
             con.Close();
         }
