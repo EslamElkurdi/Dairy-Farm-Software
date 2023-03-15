@@ -196,6 +196,11 @@ namespace Dairy
             DGV.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Incpopulate();
+        }
     }
 
 

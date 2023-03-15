@@ -195,5 +195,11 @@
   <ItemGroup>
     <None Include="Resources\Dashboard.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-icon-vector-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-icon-vector-clipart1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

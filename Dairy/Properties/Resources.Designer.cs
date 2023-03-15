@@ -133,6 +133,26 @@ namespace Dairy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refresh_icon_vector_clipart {
+            get {
+                object obj = ResourceManager.GetObject("refresh-icon-vector-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh_icon_vector_clipart1 {
+            get {
+                object obj = ResourceManager.GetObject("refresh-icon-vector-clipart1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2023_02_27_at_14_52_36 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2023-02-27 at 14.52.36", resourceCulture);
