@@ -29,9 +29,9 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -75,7 +75,7 @@ namespace Dairy
             this.dateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
-            this.CowIdCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.EmployeeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -558,26 +558,26 @@ namespace Dairy
             // 
             // SalesGDV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.SalesGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SalesGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.SalesGDV.ColumnHeadersHeight = 4;
             this.SalesGDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesGDV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesGDV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SalesGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesGDV.Location = new System.Drawing.Point(465, 493);
             this.SalesGDV.Name = "SalesGDV";
@@ -658,20 +658,20 @@ namespace Dairy
             this.save.UseVisualStyleBackColor = false;
             this.save.Click += new System.EventHandler(this.button3_Click);
             // 
-            // CowIdCB
+            // EmployeeCB
             // 
-            this.CowIdCB.BackColor = System.Drawing.Color.Transparent;
-            this.CowIdCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CowIdCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CowIdCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CowIdCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CowIdCB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CowIdCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CowIdCB.ItemHeight = 30;
-            this.CowIdCB.Location = new System.Drawing.Point(401, 169);
-            this.CowIdCB.Name = "CowIdCB";
-            this.CowIdCB.Size = new System.Drawing.Size(140, 36);
-            this.CowIdCB.TabIndex = 95;
+            this.EmployeeCB.BackColor = System.Drawing.Color.Transparent;
+            this.EmployeeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.EmployeeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.EmployeeCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmployeeCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmployeeCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.EmployeeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.EmployeeCB.ItemHeight = 30;
+            this.EmployeeCB.Location = new System.Drawing.Point(401, 169);
+            this.EmployeeCB.Name = "EmployeeCB";
+            this.EmployeeCB.Size = new System.Drawing.Size(140, 36);
+            this.EmployeeCB.TabIndex = 95;
             // 
             // guna2HtmlLabel1
             // 
@@ -679,16 +679,16 @@ namespace Dairy
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(401, 119);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(64, 24);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(112, 24);
             this.guna2HtmlLabel1.TabIndex = 94;
-            this.guna2HtmlLabel1.Text = "Cow Id";
+            this.guna2HtmlLabel1.Text = "Employee Id";
             // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
-            this.Controls.Add(this.CowIdCB);
+            this.Controls.Add(this.EmployeeCB);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.ClientPhoneTb);
@@ -789,7 +789,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2DateTimePicker dateTb;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button save;
-        private Guna.UI2.WinForms.Guna2ComboBox CowIdCB;
+        private Guna.UI2.WinForms.Guna2ComboBox EmployeeCB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

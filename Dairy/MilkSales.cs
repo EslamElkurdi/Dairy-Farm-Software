@@ -31,8 +31,8 @@ namespace Dairy
             DataTable dt = new DataTable();
             dt.Columns.Add("EmpId", typeof(int));
             dt.Load(Rdr);
-            CowIdCB.ValueMember = "EmpId";
-            CowIdCB.DataSource = dt;
+            EmployeeCB.ValueMember = "EmpId";
+            EmployeeCB.DataSource = dt;
             con.Close();
         }
 
