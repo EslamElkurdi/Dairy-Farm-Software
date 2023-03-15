@@ -21,7 +21,7 @@ namespace Dairy
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
-        private void FillCowId()
+        private void FillEmployeeId()
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl");
