@@ -146,6 +146,32 @@ namespace Dairy
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (TypeCb.SelectedIndex == -1 || AmountTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into IncomeTbl values('" + dateIncome.Value.Date + "','" + Purpose.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpID.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved");
+                    con.Close();
+                    Incpopulate();
+                    clearInc();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 
 
