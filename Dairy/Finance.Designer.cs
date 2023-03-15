@@ -79,7 +79,7 @@ namespace Dairy
             this.button1 = new System.Windows.Forms.Button();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.TypeCb = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dateIncome = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -559,7 +559,7 @@ namespace Dairy
             this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.bunifuMaterialTextbox2);
             this.panel10.Controls.Add(this.guna2HtmlLabel7);
-            this.panel10.Controls.Add(this.comboBox2);
+            this.panel10.Controls.Add(this.TypeCb);
             this.panel10.Controls.Add(this.guna2HtmlLabel8);
             this.panel10.Controls.Add(this.dateIncome);
             this.panel10.Controls.Add(this.guna2HtmlLabel9);
@@ -696,13 +696,13 @@ namespace Dairy
             this.guna2HtmlLabel7.TabIndex = 90;
             this.guna2HtmlLabel7.Text = "Amount";
             // 
-            // comboBox2
+            // TypeCb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(21, 169);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(198, 24);
-            this.comboBox2.TabIndex = 89;
+            this.TypeCb.FormattingEnabled = true;
+            this.TypeCb.Location = new System.Drawing.Point(21, 169);
+            this.TypeCb.Name = "TypeCb";
+            this.TypeCb.Size = new System.Drawing.Size(198, 24);
+            this.TypeCb.TabIndex = 89;
             // 
             // guna2HtmlLabel8
             // 
@@ -853,7 +853,7 @@ namespace Dairy
         private System.Windows.Forms.Button button1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox TypeCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateIncome;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
