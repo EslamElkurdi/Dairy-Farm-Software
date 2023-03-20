@@ -79,7 +79,19 @@ namespace Dairy
             SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            int inc, exp;
+            double bal;
+            inc = Convert.ToInt32(dt.Rows[0][0].ToString());
+            
+            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditureTbl", con);
+            DataTable dt1 = new DataTable();
+            sda.Fill(dt1);
             IncLabel.Text = dt.Rows[0][0].ToString();
+            
+            exp = Convert.ToInt32(dt.Rows[0][0].ToString());
+            bal = inc - exp;
+            Explabel.Text = dt1.Rows[0][0].ToString();
+            Balancelabel.Text = "" + bal; 
             con.Close();
         
         }
