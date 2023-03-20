@@ -77,8 +77,8 @@ namespace Dairy
             this.Cow = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.amountHeight = new System.Windows.Forms.Label();
+            this.dateheight = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label20 = new System.Windows.Forms.Label();
@@ -622,33 +622,33 @@ namespace Dairy
             this.label18.TabIndex = 128;
             this.label18.Text = "Highest Sale";
             // 
-            // label17
+            // amountHeight
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(28, 60);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 31);
-            this.label17.TabIndex = 130;
-            this.label17.Text = "RS";
+            this.amountHeight.AutoSize = true;
+            this.amountHeight.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountHeight.ForeColor = System.Drawing.Color.White;
+            this.amountHeight.Location = new System.Drawing.Point(28, 60);
+            this.amountHeight.Name = "amountHeight";
+            this.amountHeight.Size = new System.Drawing.Size(43, 31);
+            this.amountHeight.TabIndex = 130;
+            this.amountHeight.Text = "RS";
             // 
-            // label19
+            // dateheight
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(12, 100);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(120, 31);
-            this.label19.TabIndex = 131;
-            this.label19.Text = "Sale Date";
+            this.dateheight.AutoSize = true;
+            this.dateheight.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateheight.ForeColor = System.Drawing.Color.White;
+            this.dateheight.Location = new System.Drawing.Point(12, 100);
+            this.dateheight.Name = "dateheight";
+            this.dateheight.Size = new System.Drawing.Size(120, 31);
+            this.dateheight.TabIndex = 131;
+            this.dateheight.Text = "Sale Date";
             // 
             // guna2GradientPanel9
             // 
             this.guna2GradientPanel9.BackColor = System.Drawing.Color.LimeGreen;
-            this.guna2GradientPanel9.Controls.Add(this.label19);
-            this.guna2GradientPanel9.Controls.Add(this.label17);
+            this.guna2GradientPanel9.Controls.Add(this.dateheight);
+            this.guna2GradientPanel9.Controls.Add(this.amountHeight);
             this.guna2GradientPanel9.Controls.Add(this.label18);
             this.guna2GradientPanel9.Location = new System.Drawing.Point(384, 578);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
@@ -813,8 +813,8 @@ namespace Dairy
         private System.Windows.Forms.Label Cow;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label amountHeight;
+        private System.Windows.Forms.Label dateheight;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel10;
         private System.Windows.Forms.Label label20;

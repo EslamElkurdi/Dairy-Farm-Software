@@ -96,6 +96,17 @@ namespace Dairy
         
         }
 
+        private void GetMax()
+        {
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt, IncDate) from IncomeTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            amountHeight.Text = "Rs" + dt.Rows[0][0].ToString();
+            dateheight.Text = dt.Rows[0][1].ToString();
+
+
+        }
+
         private void Logistic()
         {
             con.Open();
