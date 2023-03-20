@@ -650,7 +650,7 @@ namespace Dairy
             this.guna2GradientPanel9.Controls.Add(this.label19);
             this.guna2GradientPanel9.Controls.Add(this.label17);
             this.guna2GradientPanel9.Controls.Add(this.label18);
-            this.guna2GradientPanel9.Location = new System.Drawing.Point(303, 574);
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(384, 578);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
             this.guna2GradientPanel9.Size = new System.Drawing.Size(170, 152);
             this.guna2GradientPanel9.TabIndex = 136;
@@ -663,7 +663,7 @@ namespace Dairy
             this.guna2GradientPanel10.Controls.Add(this.label22);
             this.guna2GradientPanel10.Location = new System.Drawing.Point(849, 599);
             this.guna2GradientPanel10.Name = "guna2GradientPanel10";
-            this.guna2GradientPanel10.Size = new System.Drawing.Size(170, 152);
+            this.guna2GradientPanel10.Size = new System.Drawing.Size(255, 152);
             this.guna2GradientPanel10.TabIndex = 137;
             // 
             // label20
@@ -673,9 +673,9 @@ namespace Dairy
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(12, 100);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 31);
+            this.label20.Size = new System.Drawing.Size(115, 31);
             this.label20.TabIndex = 131;
-            this.label20.Text = "Sale Date";
+            this.label20.Text = "Exp Date";
             // 
             // label21
             // 
