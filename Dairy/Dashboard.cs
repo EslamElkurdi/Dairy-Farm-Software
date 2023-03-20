@@ -71,8 +71,16 @@ namespace Dairy
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
-
-
+         
+        private void Finance() 
+        {
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            con.Close();
+        
+        }
         private void label3_Click(object sender, EventArgs e)
         {
 
