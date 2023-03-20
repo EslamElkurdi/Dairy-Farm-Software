@@ -76,6 +76,10 @@ namespace Dairy
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -100,6 +104,7 @@ namespace Dairy
             this.guna2GradientPanel6.SuspendLayout();
             this.guna2GradientPanel7.SuspendLayout();
             this.guna2GradientPanel8.SuspendLayout();
+            this.guna2GradientPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -601,11 +606,56 @@ namespace Dairy
             this.label16.TabIndex = 128;
             this.label16.Text = "Cows";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(12, 13);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(154, 31);
+            this.label18.TabIndex = 128;
+            this.label18.Text = "Highest Sale";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(28, 60);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 31);
+            this.label17.TabIndex = 130;
+            this.label17.Text = "RS";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(12, 100);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(120, 31);
+            this.label19.TabIndex = 131;
+            this.label19.Text = "Sale Date";
+            // 
+            // guna2GradientPanel9
+            // 
+            this.guna2GradientPanel9.BackColor = System.Drawing.Color.LimeGreen;
+            this.guna2GradientPanel9.Controls.Add(this.label19);
+            this.guna2GradientPanel9.Controls.Add(this.label17);
+            this.guna2GradientPanel9.Controls.Add(this.label18);
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(303, 574);
+            this.guna2GradientPanel9.Name = "guna2GradientPanel9";
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(170, 152);
+            this.guna2GradientPanel9.TabIndex = 136;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
+            this.Controls.Add(this.guna2GradientPanel9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label10);
@@ -654,6 +704,8 @@ namespace Dairy
             this.guna2GradientPanel7.PerformLayout();
             this.guna2GradientPanel8.ResumeLayout(false);
             this.guna2GradientPanel8.PerformLayout();
+            this.guna2GradientPanel9.ResumeLayout(false);
+            this.guna2GradientPanel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,5 +760,9 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
     }
 }
