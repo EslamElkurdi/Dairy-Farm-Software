@@ -16,6 +16,7 @@ namespace Dairy
         public Dashboard()
         {
             InitializeComponent();
+            Finance();
         }
 
         
@@ -78,6 +79,7 @@ namespace Dairy
             SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            IncLabel.Text = dt.Rows[0][0].ToString();
             con.Close();
         
         }

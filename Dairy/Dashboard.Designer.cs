@@ -61,9 +61,9 @@ namespace Dairy
             this.label5 = new System.Windows.Forms.Label();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.IncLabel = new System.Windows.Forms.Label();
+            this.Explabel = new System.Windows.Forms.Label();
+            this.Balancelabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -380,7 +380,7 @@ namespace Dairy
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.LimeGreen;
-            this.guna2GradientPanel2.Controls.Add(this.label9);
+            this.guna2GradientPanel2.Controls.Add(this.Balancelabel);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.Location = new System.Drawing.Point(132, 157);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
@@ -411,7 +411,7 @@ namespace Dairy
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.LimeGreen;
-            this.guna2GradientPanel4.Controls.Add(this.label8);
+            this.guna2GradientPanel4.Controls.Add(this.Explabel);
             this.guna2GradientPanel4.Controls.Add(this.label5);
             this.guna2GradientPanel4.Location = new System.Drawing.Point(173, 31);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
@@ -432,7 +432,7 @@ namespace Dairy
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BackColor = System.Drawing.Color.LimeGreen;
-            this.guna2GradientPanel5.Controls.Add(this.label7);
+            this.guna2GradientPanel5.Controls.Add(this.IncLabel);
             this.guna2GradientPanel5.Controls.Add(this.label6);
             this.guna2GradientPanel5.Location = new System.Drawing.Point(34, 31);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
@@ -450,38 +450,38 @@ namespace Dairy
             this.label6.TabIndex = 128;
             this.label6.Text = "Income";
             // 
-            // label7
+            // IncLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(38, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 31);
-            this.label7.TabIndex = 129;
-            this.label7.Text = "RS";
+            this.IncLabel.AutoSize = true;
+            this.IncLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncLabel.ForeColor = System.Drawing.Color.White;
+            this.IncLabel.Location = new System.Drawing.Point(38, 45);
+            this.IncLabel.Name = "IncLabel";
+            this.IncLabel.Size = new System.Drawing.Size(43, 31);
+            this.IncLabel.TabIndex = 129;
+            this.IncLabel.Text = "RS";
             // 
-            // label8
+            // Explabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(35, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 31);
-            this.label8.TabIndex = 130;
-            this.label8.Text = "RS";
+            this.Explabel.AutoSize = true;
+            this.Explabel.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Explabel.ForeColor = System.Drawing.Color.White;
+            this.Explabel.Location = new System.Drawing.Point(35, 45);
+            this.Explabel.Name = "Explabel";
+            this.Explabel.Size = new System.Drawing.Size(43, 31);
+            this.Explabel.TabIndex = 130;
+            this.Explabel.Text = "RS";
             // 
-            // label9
+            // Balancelabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(35, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 31);
-            this.label9.TabIndex = 130;
-            this.label9.Text = "RS";
+            this.Balancelabel.AutoSize = true;
+            this.Balancelabel.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Balancelabel.ForeColor = System.Drawing.Color.White;
+            this.Balancelabel.Location = new System.Drawing.Point(35, 45);
+            this.Balancelabel.Name = "Balancelabel";
+            this.Balancelabel.Size = new System.Drawing.Size(43, 31);
+            this.Balancelabel.TabIndex = 130;
+            this.Balancelabel.Text = "RS";
             // 
             // label10
             // 
@@ -793,12 +793,12 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Balancelabel;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label Explabel;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label IncLabel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
