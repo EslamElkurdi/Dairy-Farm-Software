@@ -82,7 +82,7 @@ namespace Dairy
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.ExpHigh = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -659,7 +659,7 @@ namespace Dairy
             // 
             this.guna2GradientPanel10.BackColor = System.Drawing.Color.LimeGreen;
             this.guna2GradientPanel10.Controls.Add(this.label20);
-            this.guna2GradientPanel10.Controls.Add(this.label21);
+            this.guna2GradientPanel10.Controls.Add(this.ExpHigh);
             this.guna2GradientPanel10.Controls.Add(this.label22);
             this.guna2GradientPanel10.Location = new System.Drawing.Point(849, 599);
             this.guna2GradientPanel10.Name = "guna2GradientPanel10";
@@ -677,16 +677,16 @@ namespace Dairy
             this.label20.TabIndex = 131;
             this.label20.Text = "Exp Date";
             // 
-            // label21
+            // ExpHigh
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(28, 60);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 31);
-            this.label21.TabIndex = 130;
-            this.label21.Text = "RS";
+            this.ExpHigh.AutoSize = true;
+            this.ExpHigh.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpHigh.ForeColor = System.Drawing.Color.White;
+            this.ExpHigh.Location = new System.Drawing.Point(28, 60);
+            this.ExpHigh.Name = "ExpHigh";
+            this.ExpHigh.Size = new System.Drawing.Size(43, 31);
+            this.ExpHigh.TabIndex = 130;
+            this.ExpHigh.Text = "RS";
             // 
             // label22
             // 
@@ -818,7 +818,7 @@ namespace Dairy
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel10;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label ExpHigh;
         private System.Windows.Forms.Label label22;
     }
 }
