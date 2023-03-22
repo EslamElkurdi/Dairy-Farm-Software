@@ -24,6 +24,7 @@ namespace Dairy
 
         private void Splash_Load(object sender, EventArgs e)
         {
+            timer1.Start();
 
         }
 
