@@ -18,6 +18,7 @@ namespace Dairy
             InitializeComponent();
             Finance();
             Logistic();
+            GetMax();
         }
 
         
