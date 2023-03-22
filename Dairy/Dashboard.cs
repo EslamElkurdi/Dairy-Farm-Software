@@ -107,39 +107,23 @@ namespace Dairy
             amountHeight.Text = "Rs" + dt.Rows[0][0].ToString();
             //dateheight.Text = dt.Rows[0][1].ToString();
             ExpHigh.Text = "Rs" + dt1.Rows[0][0].ToString();
-
-
         }
 
         private void Logistic()
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", con);
-            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(TotalMilk) from MilkTbl", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowsTbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalMilk) from MilkTbl", con);
             SqlDataAdapter sda2 = new SqlDataAdapter("select Count(*) from EmployeeTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             Cow.Text = dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
-            sda.Fill(dt1);
-            Milk.Text = dt1.Rows[0][0].ToString();
+            sda1.Fill(dt1);
+            Milk.Text = dt1.Rows[0][0].ToString() + " " + "Liters";
             DataTable dt2 = new DataTable();
-            sda.Fill(dt2);
+            sda2.Fill(dt2);
             Employee.Text = dt2.Rows[0][0].ToString();
-
-            int inc, exp;
-            double bal;
-            inc = Convert.ToInt32(dt.Rows[0][0].ToString());
-
-            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditureTbl", con);
-            
-            sda.Fill(dt1);
-            IncLabel.Text = "Rs" + dt.Rows[0][0].ToString();
-
-            exp = Convert.ToInt32(dt.Rows[0][0].ToString());
-            bal = inc - exp;
-            Explabel.Text = "Rs" + dt1.Rows[0][0].ToString();
-            Balancelabel.Text = "Rs" + bal;
             con.Close();
 
         }
