@@ -81,6 +81,7 @@ namespace Dairy
             this.button4 = new System.Windows.Forms.Button();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.filterTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -98,6 +99,7 @@ namespace Dairy
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CowDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -731,11 +733,22 @@ namespace Dairy
             this.filterTb.TabIndex = 26;
             this.filterTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Dairy.Properties.Resources.log_out;
+            this.pictureBox9.Location = new System.Drawing.Point(1378, 12);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(60, 53);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 107;
+            this.pictureBox9.TabStop = false;
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 832);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.filterTb);
             this.Controls.Add(this.button4);
@@ -791,6 +804,7 @@ namespace Dairy
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CowDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -847,5 +861,6 @@ namespace Dairy
         private System.Windows.Forms.PictureBox pictureBox8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Bunifu.Framework.UI.BunifuMaterialTextbox filterTb;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
