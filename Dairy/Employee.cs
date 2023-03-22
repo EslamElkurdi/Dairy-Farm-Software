@@ -173,7 +173,7 @@ namespace Dairy
                 try
                 {
                     con.Open();
-                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "',EmpDob= '" + dateTb.Value.Date + "',Gender='" + Gender.SelectedValue.ToString() + "',phone='" + Phone.Text + "',Address='" + Address.Text + "' where EmpId='" + key + " ;";
+                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "',EmpDob= '" + dateTb.Value.Date + "',Gender='" + Gender.SelectedValue.ToString() + "',phone='" + Phone.Text + "',Address='" + Address.Text + "',EmpPass='" + PassTb.Text + "' where EmpId='" + key + " ;";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Updated");
