@@ -29,9 +29,11 @@ namespace Dairy
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.MyProgress = new Bunifu.Framework.UI.BunifuProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,19 +48,19 @@ namespace Dairy
             this.label1.TabIndex = 1;
             this.label1.Text = "Dairy Farm Software";
             // 
-            // bunifuProgressBar1
+            // MyProgress
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(4, 438);
-            this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(791, 19);
-            this.bunifuProgressBar1.TabIndex = 2;
-            this.bunifuProgressBar1.Value = 0;
-            this.bunifuProgressBar1.progressChanged += new System.EventHandler(this.bunifuProgressBar1_progressChanged);
+            this.MyProgress.BackColor = System.Drawing.Color.Silver;
+            this.MyProgress.BorderRadius = 5;
+            this.MyProgress.Location = new System.Drawing.Point(4, 438);
+            this.MyProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MyProgress.MaximumValue = 100;
+            this.MyProgress.Name = "MyProgress";
+            this.MyProgress.ProgressColor = System.Drawing.Color.Teal;
+            this.MyProgress.Size = new System.Drawing.Size(791, 19);
+            this.MyProgress.TabIndex = 2;
+            this.MyProgress.Value = 0;
+            this.MyProgress.progressChanged += new System.EventHandler(this.bunifuProgressBar1_progressChanged);
             // 
             // pictureBox1
             // 
@@ -70,19 +72,24 @@ namespace Dairy
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bunifuProgressBar1);
+            this.Controls.Add(this.MyProgress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Splash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -93,7 +100,8 @@ namespace Dairy
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
+        private Bunifu.Framework.UI.BunifuProgressBar MyProgress;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
