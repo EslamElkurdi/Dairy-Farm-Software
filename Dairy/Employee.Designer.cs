@@ -40,7 +40,6 @@ namespace Dairy
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.NameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -57,9 +56,12 @@ namespace Dairy
             this.button3 = new System.Windows.Forms.Button();
             this.PassTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HealthDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel8
@@ -165,16 +167,6 @@ namespace Dairy
             this.NameTb.Size = new System.Drawing.Size(198, 44);
             this.NameTb.TabIndex = 82;
             this.NameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Dairy.Properties.Resources.Dashboard;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 55);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(132, 74);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 22;
-            this.pictureBox8.TabStop = false;
             // 
             // label2
             // 
@@ -407,11 +399,32 @@ namespace Dairy
             this.guna2HtmlLabel4.TabIndex = 104;
             this.guna2HtmlLabel4.Text = "Password";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Dairy.Properties.Resources.Dashboard;
+            this.pictureBox8.Location = new System.Drawing.Point(3, 55);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(132, 74);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 22;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Dairy.Properties.Resources.log_out;
+            this.pictureBox2.Location = new System.Drawing.Point(1455, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 106;
+            this.pictureBox2.TabStop = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1527, 836);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PassTb);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.Phone);
@@ -436,10 +449,11 @@ namespace Dairy
             this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HealthDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,5 +486,6 @@ namespace Dairy
         private System.Windows.Forms.Button button3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PassTb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -201,5 +201,8 @@
   <ItemGroup>
     <None Include="Resources\refresh-icon-vector-clipart1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -33,7 +33,6 @@ namespace Dairy
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,7 +41,10 @@ namespace Dairy
             this.button1 = new System.Windows.Forms.Button();
             this.RoleCb = new System.Windows.Forms.ComboBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,16 +89,6 @@ namespace Dairy
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(112, 24);
             this.guna2HtmlLabel3.TabIndex = 4;
             this.guna2HtmlLabel3.Text = "Nice Quality";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dairy.Properties.Resources.cow_1715829__340;
-            this.pictureBox1.Location = new System.Drawing.Point(452, 90);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -205,11 +197,32 @@ namespace Dairy
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "Reset";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Dairy.Properties.Resources.log_out;
+            this.pictureBox2.Location = new System.Drawing.Point(728, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dairy.Properties.Resources.cow_1715829__340;
+            this.pictureBox1.Location = new System.Drawing.Point(452, 90);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(170, 137);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 585);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.button1);
@@ -226,6 +239,7 @@ namespace Dairy
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,5 +261,6 @@ namespace Dairy
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox RoleCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
