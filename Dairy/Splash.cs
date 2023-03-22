@@ -27,9 +27,19 @@ namespace Dairy
 
         }
 
+        int startppoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            startppoint += 5;
+            MyProgress.Value = startppoint;
+            if (MyProgress.Value == 100)
+            {
+                MyProgress.Value = 0;
+                timer1.Stop();
+                Login Log = new Login();
+                this.Hide();
+                Log.Show();
+            }
         }
     }
 }
