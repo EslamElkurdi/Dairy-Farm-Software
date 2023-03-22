@@ -118,7 +118,8 @@ namespace Dairy
             Gender.Text = HealthDGV.SelectedRows[0].Cells[3].Value.ToString();
             Phone.Text = HealthDGV.SelectedRows[0].Cells[4].Value.ToString();
             Address.Text = HealthDGV.SelectedRows[0].Cells[5].Value.ToString();
-            
+            PassTb.Text = HealthDGV.SelectedRows[0].Cells[6].Value.ToString();
+
             if (NameTb.Text == "")
             {
                 key = 0;
