@@ -98,15 +98,16 @@ namespace Dairy
 
         private void GetMax()
         {
-            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl Group By IncDate", con);
-            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl Group By IncDate", con);
-
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl", con);
             DataTable dt = new DataTable();
-            DataTable dt1 = new DataTable();
             sda.Fill(dt);
-            amountHeight.Text = "Rs" + dt.Rows[0][0].ToString();
-            //dateheight.Text = dt.Rows[0][1].ToString();
-            ExpHigh.Text = "Rs" + dt1.Rows[0][0].ToString();
+            amountHeight.Text = "Rs " + dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            ExpHigh.Text = "Rs " + dt1.Rows[0][0].ToString();
+            con.Close();
         }
 
         private void Logistic()
