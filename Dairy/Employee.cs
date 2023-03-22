@@ -85,7 +85,7 @@ namespace Dairy
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (NameTb.Text == "" || Gender.SelectedIndex == -1 || Address.Text == "" || Phone.Text == "")
+            if (NameTb.Text == "" || Gender.SelectedIndex == -1 || Address.Text == "" || Phone.Text == "" || PassTb.Text == "")
             {
                 MessageBox.Show("Missing Data");
             }
@@ -94,7 +94,7 @@ namespace Dairy
                 try
                 {
                     con.Open();
-                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + dateTb.Value.Date + "','" + Gender.SelectedValue.ToString() + "','" + Phone.Text + "','" +Address.Text +"')";
+                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + dateTb.Value.Date + "','" + Gender.SelectedValue.ToString() + "','" + Phone.Text + "','" +Address.Text + "','" + PassTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Saved");
